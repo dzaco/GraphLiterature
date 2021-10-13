@@ -5,12 +5,13 @@ import junit.framework.TestCase;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class TextAnalyzerTest extends TestCase {
+public class TextAnalyzerTest {
 
     @Test
-    public void testAnalyze() {
+    public void testAnalyze() throws FileNotFoundException {
         var analyzer = new TextAnalyzer();
         var file = FileManager.findFile("test.txt");
         if(file.exists()) {

@@ -5,19 +5,38 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.util.Optional;
 
-public class FileManagerTest extends TestCase {
+public class FileManagerTest {
 
     @Test
-    public void testGetResources() throws URISyntaxException, IOException {
-        String name = "test.txt";
-//        var manager = new FileManager();
-        File file = FileManager.findFile(name);
-        Assert.assertTrue( file.exists() );
+    public void testCreateFile() throws IOException, URISyntaxException {
+        String name ="create_test.txt";
+        var file = FileManager.findFile(name);
+        Optional<Long> mod = Optional.empty();
+        if(file.exists())
+            mod = Optional.of(file.lastModified());
+        var newCreated = FileManager.createFile(name);
 
-        var text = FileManager.readLinesToStream(file);
-        text.forEach(System.out::println);
+        Assert.assertTrue( newCreated.exists() );
+        mod.ifPresent( time ->
+                Assert.assertTrue(time != newCreated.lastModified() ));
+
+    }
+    @Test
+    public void testTestGetResources() {
+        try {
+            var resources = FileManager.getResources();
+            Assert.assertTrue(resources.exists());
+            Assert.assertTrue(resources.list().length > 0);
+            for (String fileName : resources.list()) {
+                System.out.println(fileName);
+            }
+        } catch (FileNotFoundException e) {
+            Assert.fail();
+        }
     }
 }
