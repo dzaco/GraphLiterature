@@ -30,6 +30,7 @@ public class TextAnalyzer {
         while(tokenStream.incrementToken()) {
             result.add(attr.toString());
         }
+        tokenStream.close();
         return result;
     }
 
