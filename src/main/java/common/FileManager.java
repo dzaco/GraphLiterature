@@ -1,5 +1,7 @@
 package common;
 
+import engine.Graph;
+
 import java.io.*;
 import java.net.URISyntaxException;
 import java.net.URL;
@@ -8,6 +10,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Stream;
@@ -22,7 +25,7 @@ public class FileManager {
         return Optional.ofNullable(filename)
                 .filter(f -> f.contains("."))
                 .map(String::toLowerCase)
-                .map(f -> f.substring(filename.lastIndexOf(".") + 1));
+                .map(f -> f.substring(filename.lastIndexOf(".")));
     }
     public static boolean isTxt(File file) {
         var extension = getExtension(file.getName());
@@ -60,19 +63,31 @@ public class FileManager {
      * @return file name with suffix to keep pattern
      */
     public static String getFileNameWithAnalyzedWords(String srcFileName) {
-        return srcFileName + "_AnalyzedWords";
+        var extension = getExtension(srcFileName);
+        String name = extension.map(s -> srcFileName.replace(s, "")).orElse(srcFileName);
+        return name + "_AnalyzedWords" + extension.orElse("");
     }
     /**
      * @return file name with suffix to keep pattern
      */
     public static String getFileNameWithGraph(String srcFileName) {
-        return srcFileName + "_Graph";
+        var extension = getExtension(srcFileName);
+        String name = extension
+                .map(s -> srcFileName.replace(s, ""))
+                .orElse(srcFileName);
+        return name + "_Graph" + extension.orElse("");
     }
     public static File findAnalyzedWordsFile(String name) throws FileNotFoundException {
-        return findFile( getFileNameWithAnalyzedWords(name));
+        if(name.contains("_AnalyzedWords"))
+            return findFile(name);
+        else
+            return findFile( getFileNameWithAnalyzedWords(name));
     }
     public static File findGraphFile(String name) throws FileNotFoundException {
-        return findFile( getFileNameWithGraph(name));
+        if(name.contains("_Graph"))
+            return findFile(name);
+        else
+            return findFile( getFileNameWithGraph(name));
     }
 
     /**
@@ -119,5 +134,31 @@ public class FileManager {
             return file.getName().split("_")[1];
         else
             return file.getName();
+    }
+
+    public static File save(List<String> words, String separator, String fileName) throws IOException {
+        var file = FileManager.findAnalyzedWordsFile(fileName);
+        if(!file.exists()) file.createNewFile();
+
+        var writer = new PrintWriter(file);
+        for(var word : words) {
+            writer.print(word + separator);
+        }
+        writer.close();
+        return file;
+    }
+    public static File save(Graph graph, String fileName) throws IOException {
+        var graphFile = FileManager.findGraphFile(fileName);
+        if(!graphFile.exists()) graphFile.createNewFile();
+
+        var writer = new PrintWriter(graphFile);
+        for (var word : graph.words())
+        {
+            var neighbor = graph.getNeighbors(word);
+            var line = word + " : " +  String.join(",", neighbor);
+            writer.print(line + "\n");
+        }
+        writer.close();
+        return graphFile;
     }
 }
