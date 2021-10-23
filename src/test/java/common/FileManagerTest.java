@@ -1,5 +1,7 @@
 package common;
 
+import engine.Graph;
+import factory.GraphFactory;
 import junit.framework.TestCase;
 import org.junit.Assert;
 import org.junit.Test;
@@ -13,20 +15,6 @@ import java.util.Optional;
 public class FileManagerTest {
 
     @Test
-    public void testCreateFile() throws IOException, URISyntaxException {
-        String name ="create_test.txt";
-        var file = FileManager.findFile(name);
-        Optional<Long> mod = Optional.empty();
-        if(file.exists())
-            mod = Optional.of(file.lastModified());
-        var newCreated = FileManager.createFile(name);
-
-        Assert.assertTrue( newCreated.exists() );
-        mod.ifPresent( time ->
-                Assert.assertTrue(time != newCreated.lastModified() ));
-
-    }
-    @Test
     public void testTestGetResources() {
         try {
             var resources = FileManager.getResources();
@@ -38,5 +26,11 @@ public class FileManagerTest {
         } catch (FileNotFoundException e) {
             Assert.fail();
         }
+    }
+
+    @Test
+    public void testSaveGraph() throws IOException {
+        var graph = GraphFactory.build(7,3);
+        FileManager.save(graph, "testGraph.dgs");
     }
 }
