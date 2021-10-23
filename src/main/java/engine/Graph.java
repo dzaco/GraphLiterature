@@ -1,60 +1,67 @@
 package engine;
 
-import java.util.*;
+import org.graphstream.graph.Edge;
+import org.graphstream.graph.Node;
+import org.graphstream.graph.implementations.SingleGraph;
 
-public class Graph {
-    private Map<String, List<String>> graph;
-    public Graph(List<String> words) {
-        graph = new HashMap<>();
-        // the last word must be handled separately
+import java.util.List;
+
+public class Graph extends SingleGraph {
+
+    public Graph() {
+        this("Graph");
+    }
+    public Graph(String id) {
+        super(id,false,false);
+    }
+    public Graph(String id,List<String> words) {
+        this(id);
+        build(words);
+    }
+    public Graph(List<String> words){
+        this("Graph", words);
+    }
+
+    public Graph build(List<String> words) {
+        // the last word node will be added with last but one word in last iteration as nextWord
         for ( int i = 0; i < words.size() - 1; i++ ) {
             String word = words.get(i);
             String nextWord = words.get(i + 1);
             this.add(word, nextWord);
         }
-        // last word
-        this.add(words.get(words.size() - 1));
+        return this;
     }
 
-    /**
-     * append word as key to graph and next word to list as neighbor of this word
-     * @param word
-     * @param nextWord
-     * @return
-     */
-    public List<String> add(String word, String nextWord) {
-        var neighbors = graph.get(word);
+    public Node add(String word) {
+        var wordNode = this.getNode(word);
+        if(wordNode == null)
+            wordNode = this.addNode(word);
+        return wordNode;
+    }
 
-        // graph not contains word
-        if(neighbors == null) {
-            neighbors = new ArrayList<>(Collections.singleton(nextWord));
-            graph.put(word, neighbors);
+    public Node add(String word, String nextWord) {
+        var wordNode = this.add(word);
+        var nextWordNode = this.add(nextWord);
+        var edge = this.addEdge(wordNode, nextWordNode, true);
+        return nextWordNode;
+    }
+
+    public String createEdgeIndex(Node wordNode, Node nextWordNode) {
+        return createEdgeIndex(wordNode.getId(), nextWordNode.getId());
+    }
+    public String createEdgeIndex(String word, String nextWord) {
+        return word + " -> " + nextWord;
+    }
+
+    public Edge addEdge(Node from, Node to, boolean directed) {
+        var id = createEdgeIndex(from,to);
+        var edge = getEdge(id);
+        if(edge == null) {
+            edge = super.addEdge(id, from, to, true);
         }
-        // graph contains word
         else {
-            neighbors.add(nextWord);
+            // TODO: increase edge weight - stronger connection between this two words
         }
-
-        return neighbors;
-    }
-
-    /**
-     * add word to graph but without neighbors
-     * @param word
-     * @return
-     */
-    public List<String> add(String word) {
-        var neighbors = graph.get(word);
-        if(neighbors == null) {
-            neighbors = new ArrayList<>();
-        }
-        graph.put(word, neighbors);
-        return neighbors;
-    }
-    public List<String> getNeighbors(String word) {
-        return graph.get(word);
-    }
-    public Set<String> words() {
-        return graph.keySet();
+        return edge;
     }
 }

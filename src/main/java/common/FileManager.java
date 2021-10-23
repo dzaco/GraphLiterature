@@ -1,10 +1,8 @@
 package common;
 
-import engine.Graph;
+import engine.MapGraph;
 
 import java.io.*;
-import java.net.URISyntaxException;
-import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -13,7 +11,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
-import java.util.stream.Stream;
 
 public class FileManager {
 
@@ -147,14 +144,14 @@ public class FileManager {
         writer.close();
         return file;
     }
-    public static File save(Graph graph, String fileName) throws IOException {
+    public static File save(MapGraph mapGraph, String fileName) throws IOException {
         var graphFile = FileManager.findGraphFile(fileName);
         if(!graphFile.exists()) graphFile.createNewFile();
 
         var writer = new PrintWriter(graphFile);
-        for (var word : graph.words())
+        for (var word : mapGraph.words())
         {
-            var neighbor = graph.getNeighbors(word);
+            var neighbor = mapGraph.getNeighbors(word);
             var line = word + " : " +  String.join(",", neighbor);
             writer.print(line + "\n");
         }

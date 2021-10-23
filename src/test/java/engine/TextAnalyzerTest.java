@@ -26,36 +26,36 @@ public class TextAnalyzerTest {
         }
     }
 
-    @Test
-    public void testAnalyzeAndSaveResults() throws FileNotFoundException {
-        var analyzer = new TextAnalyzer();
-        var fileName = "test.txt";
-        var file = FileManager.findFile(fileName);
-        if(file.exists()) {
-            try {
-                var result = analyzer.analyzeAndSave(file);
-                System.out.println(result);
+//    @Test
+//    public void testAnalyzeAndSaveResults() throws FileNotFoundException {
+//        var analyzer = new TextAnalyzer();
+//        var fileName = "test.txt";
+//        var file = FileManager.findFile(fileName);
+//        if(file.exists()) {
+//            try {
+//                var result = analyzer.analyzeAndSave(file);
+//                System.out.println(result);
+//
+//                var wordsFile = FileManager.findAnalyzedWordsFile(fileName);
+//                Assert.assertTrue(wordsFile.exists());
+//
+//            } catch (IOException e) {
+//                System.out.println("Analyze error: " + e.getMessage());
+//            }
+//        }
+//        else {
+//            Assert.fail();
+//        }
+//    }
 
-                var wordsFile = FileManager.findAnalyzedWordsFile(fileName);
-                Assert.assertTrue(wordsFile.exists());
-
-            } catch (IOException e) {
-                System.out.println("Analyze error: " + e.getMessage());
-            }
-        }
-        else {
-            Assert.fail();
-        }
-    }
-
-    @Test
-    public void testCreateGraphAndSave() throws IOException {
-        var analyzer = new TextAnalyzer();
-        var fileName = "test.txt";
-        var file = FileManager.findFile(fileName);
-        var graph = analyzer.createGraphAndSave(file);
-
-        var graphFile = FileManager.findGraphFile(file.getName());
-        Assert.assertTrue(graphFile.exists());
-    }
+//    @Test
+//    public void testCreateGraphAndSave() throws IOException {
+//        var analyzer = new TextAnalyzer();
+//        var fileName = "test.txt";
+//        var file = FileManager.findFile(fileName);
+//        var graph = analyzer.createGraphAndSave(file);
+//
+//        var graphFile = FileManager.findGraphFile(file.getName());
+//        Assert.assertTrue(graphFile.exists());
+//    }
 }
