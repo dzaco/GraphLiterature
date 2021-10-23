@@ -19,6 +19,11 @@ public class FileManager {
         byte[] encoded = Files.readAllBytes(file.toPath());
         return new String(encoded, StandardCharsets.UTF_8);
     }
+
+    /**
+     * @param filename
+     * @return Optional<String> file extension started with dot (e.g. -> ".txt")
+     */
     public static Optional<String> getExtension(String filename) {
         return Optional.ofNullable(filename)
                 .filter(f -> f.contains("."))
@@ -39,7 +44,10 @@ public class FileManager {
     public static String txt = ".txt";
     public static String dgs = ".dgs";
 
-
+    /**
+     * @return Resources file in this project.
+     * @throws FileNotFoundException if resources not found
+     */
     public static File getResources() throws FileNotFoundException {
         Path currentRelativePath = Paths.get("");
         var path = currentRelativePath
@@ -70,7 +78,7 @@ public class FileManager {
      * search file in resources
      * @param name of file
      * @return file object wit path resources/name.
-     * @throws FileNotFoundException if couldn't find resources folder
+     * @throws FileNotFoundException if couldn't find resources folder or IOException if couldn't create new file
      */
     public static File findFile(String name, boolean create) throws IOException {
         var file = findFile(name);

@@ -21,6 +21,12 @@ public class TextAnalyzer {
         this.analyzer = new PolishAnalyzer();
     }
 
+    /**
+     * Analyze text using PolishAnalyzer from Apache Lucene
+     * @param text
+     * @return a list of normalized words
+     * @throws IOException
+     */
     public List<String> analyze(String text) throws IOException {
         List<String> result = new ArrayList<String>();
         TokenStream tokenStream = analyzer.tokenStream(null, new StringReader(text) );
@@ -33,6 +39,12 @@ public class TextAnalyzer {
         return result;
     }
 
+    /**
+     * Analyze text using PolishAnalyzer from Apache Lucene
+     * @param file
+     * @return a list of normalized words
+     * @throws IOException
+     */
     public List<String> analyze(File file) throws IOException {
         var text = FileManager.read(file);
         return this.analyze(text);
