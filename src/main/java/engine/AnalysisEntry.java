@@ -1,10 +1,13 @@
 package engine;
 
+import java.util.Optional;
+
 public class AnalysisEntry {
     private static int count;
-    private int index;
-    private String word;
-    private String analyzedWord;
+    private final int index;
+    private final String word;
+    private final String analyzedWord;
+    private Optional<Integer> occurrence;
 
     public AnalysisEntry(String word, String analyzedWord) {
         count++;
@@ -23,5 +26,13 @@ public class AnalysisEntry {
 
     public String getAnalyzedWord() {
         return analyzedWord;
+    }
+
+    public void setOccurrence(int occurrence) {
+        this.occurrence = Optional.of(occurrence);
+    }
+
+    public Optional<Integer> getOccurrence() {
+        return occurrence;
     }
 }

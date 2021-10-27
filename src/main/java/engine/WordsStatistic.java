@@ -2,6 +2,7 @@ package engine;
 
 import java.text.BreakIterator;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class WordsStatistic {
     private final List<String> words;
@@ -22,6 +23,16 @@ public class WordsStatistic {
         this.numberOfWords = calculateNumberOfWords(words);
         this.numberOfUniqueWords = calculateNumberOfUniqueWords(words);
         this.wordsOccurrence = calculateWordsOccurrence(words);
+    }
+    public WordsStatistic(ArrayList<AnalysisEntry> words) {
+        this.words = words.stream().map(AnalysisEntry::getAnalyzedWord).collect(Collectors.toList());
+        this.numberOfWords = calculateNumberOfWords(this.words);
+        this.numberOfUniqueWords = calculateNumberOfUniqueWords(this.words);
+        this.wordsOccurrence = calculateWordsOccurrence(this.words);
+        for(var analysisWord : words) {
+            var occurrence = wordsOccurrence.get(analysisWord.getAnalyzedWord());
+            analysisWord.setOccurrence(occurrence);
+        }
     }
 
     public List<String> calculateWords(String text) {
