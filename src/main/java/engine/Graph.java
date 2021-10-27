@@ -4,7 +4,10 @@ import org.graphstream.graph.Edge;
 import org.graphstream.graph.Node;
 import org.graphstream.graph.implementations.SingleGraph;
 
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Graph extends SingleGraph {
 
@@ -14,12 +17,15 @@ public class Graph extends SingleGraph {
     public Graph(String id) {
         super(id,false,false);
     }
-    public Graph(String id,List<String> words) {
+    public Graph(String id, List<String> words) {
         this(id);
         build(words);
     }
-    public Graph(List<String> words){
-        this("Graph", words);
+    public Graph(String id, ArrayList<AnalysisEntry> analysisEntries) {
+        this(id);
+        build(analysisEntries.stream()
+                .map(AnalysisEntry::getAnalyzedWord)
+                .collect(Collectors.toList()));
     }
 
     /**

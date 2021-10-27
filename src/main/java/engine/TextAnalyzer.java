@@ -9,16 +9,18 @@ import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import java.io.File;
 import java.io.IOException;
 import java.io.StringReader;
-import java.util.ArrayList;
-import java.util.List;
+import java.lang.reflect.Array;
+import java.util.*;
 import java.util.logging.Logger;
 
 public class TextAnalyzer {
     protected final Logger logger = Logger.getLogger(getClass().getName());
     private final Analyzer analyzer;
+    private ArrayList<AnalysisEntry> analysisEntries;
 
     public TextAnalyzer() {
         this.analyzer = new PolishAnalyzer();
+        analysisEntries = new ArrayList<>();
     }
 
     /**
@@ -49,4 +51,28 @@ public class TextAnalyzer {
         var text = FileManager.read(file);
         return this.analyze(text);
     }
+
+    public ArrayList<AnalysisEntry> analyzeAll(String text) throws IOException {
+        for(String word : clean(text).split(" ")) {
+            var analyzedWord = this.analyze(word)
+                    .stream().findFirst().orElse(word);
+            this.analysisEntries.add(new AnalysisEntry(word, analyzedWord));
+        }
+        return analysisEntries;
+    }
+
+    public ArrayList<AnalysisEntry> analyzeAll(File file) throws IOException {
+        var text = FileManager.read(file);
+        return analyzeAll(text);
+    }
+
+    private String clean(String text) {
+        return text.toLowerCase()
+                .replace("\n", " ")
+                .replace("!","")
+                .replace("?","")
+                .replace(",","")
+                .replace(".","");
+    }
+
 }

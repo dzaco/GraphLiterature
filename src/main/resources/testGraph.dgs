@@ -3,9 +3,21 @@ null 0 0
 an "wideo"
 cn "wideo"  "ui.label":"wideo"
 cn "wideo"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "może"
+cn "może"  "ui.label":"może"
+cn "może"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "być"
+cn "być"  "ui.label":"być"
+cn "być"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "bardzo"
+cn "bardzo"  "ui.label":"bardzo"
+cn "bardzo"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
 an "pomocny"
 cn "pomocny"  "ui.label":"pomocny"
 cn "pomocny"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "w"
+cn "w"  "ui.label":"w"
+cn "w"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
 an "przedstawienie"
 cn "przedstawienie"  "ui.label":"przedstawienie"
 cn "przedstawienie"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
@@ -18,9 +30,15 @@ cn "punkt"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 
 an "widzieć"
 cn "widzieć"  "ui.label":"widzieć"
 cn "widzieć"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "nie"
+cn "nie"  "ui.label":"nie"
+cn "nie"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
 an "mój"
 cn "mój"  "ui.label":"mój"
 cn "mój"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "po"
+cn "po"  "ui.label":"po"
+cn "po"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
 an "kliknąć"
 cn "kliknąć"  "ui.label":"kliknąć"
 cn "kliknąć"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
@@ -30,6 +48,9 @@ cn "łączać"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offs
 an "onliny"
 cn "onliny"  "ui.label":"onliny"
 cn "onliny"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "można"
+cn "można"  "ui.label":"można"
+cn "można"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
 an "wstayć"
 cn "wstayć"  "ui.label":"wstayć"
 cn "wstayć"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
@@ -39,6 +60,12 @@ cn "kod"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5p
 an "osadzać"
 cn "osadzać"  "ui.label":"osadzać"
 cn "osadzać"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "dla"
+cn "dla"  "ui.label":"dla"
+cn "dla"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "które"
+cn "które"  "ui.label":"które"
+cn "które"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
 an "chcieć"
 cn "chcieć"  "ui.label":"chcieć"
 cn "chcieć"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
@@ -48,12 +75,30 @@ cn "dodać"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset:
 an "fi"
 cn "fi"  "ui.label":"fi"
 cn "fi"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
-ae "wideo -> pomocny" "wideo" > "pomocny"
-ce "wideo -> pomocny"  "ui.label":1
-ce "wideo -> pomocny"  "weight":1
-ae "pomocny -> przedstawienie" "pomocny" > "przedstawienie"
-ce "pomocny -> przedstawienie"  "ui.label":1
-ce "pomocny -> przedstawienie"  "weight":1
+an "to"
+cn "to"  "ui.label":"to"
+cn "to"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "też"
+cn "też"  "ui.label":"też"
+cn "też"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+ae "wideo -> może" "wideo" > "może"
+ce "wideo -> może"  "ui.label":1
+ce "wideo -> może"  "weight":1
+ae "może -> być" "może" > "być"
+ce "może -> być"  "ui.label":1
+ce "może -> być"  "weight":1
+ae "być -> bardzo" "być" > "bardzo"
+ce "być -> bardzo"  "ui.label":1
+ce "być -> bardzo"  "weight":1
+ae "bardzo -> pomocny" "bardzo" > "pomocny"
+ce "bardzo -> pomocny"  "ui.label":1
+ce "bardzo -> pomocny"  "weight":1
+ae "pomocny -> w" "pomocny" > "w"
+ce "pomocny -> w"  "ui.label":1
+ce "pomocny -> w"  "weight":1
+ae "w -> przedstawienie" "w" > "przedstawienie"
+ce "w -> przedstawienie"  "ui.label":1
+ce "w -> przedstawienie"  "weight":1
 ae "przedstawienie -> swój" "przedstawienie" > "swój"
 ce "przedstawienie -> swój"  "ui.label":1
 ce "przedstawienie -> swój"  "weight":1
@@ -63,15 +108,21 @@ ce "swój -> punkt"  "weight":1
 ae "punkt -> widzieć" "punkt" > "widzieć"
 ce "punkt -> widzieć"  "ui.label":2
 ce "punkt -> widzieć"  "weight":2
-ae "widzieć -> mój" "widzieć" > "mój"
-ce "widzieć -> mój"  "ui.label":1
-ce "widzieć -> mój"  "weight":1
+ae "widzieć -> nie" "widzieć" > "nie"
+ce "widzieć -> nie"  "ui.label":1
+ce "widzieć -> nie"  "weight":1
+ae "nie -> mój" "nie" > "mój"
+ce "nie -> mój"  "ui.label":1
+ce "nie -> mój"  "weight":1
 ae "mój -> punkt" "mój" > "punkt"
 ce "mój -> punkt"  "ui.label":1
 ce "mój -> punkt"  "weight":1
-ae "widzieć -> kliknąć" "widzieć" > "kliknąć"
-ce "widzieć -> kliknąć"  "ui.label":1
-ce "widzieć -> kliknąć"  "weight":1
+ae "widzieć -> po" "widzieć" > "po"
+ce "widzieć -> po"  "ui.label":1
+ce "widzieć -> po"  "weight":1
+ae "po -> kliknąć" "po" > "kliknąć"
+ce "po -> kliknąć"  "ui.label":1
+ce "po -> kliknąć"  "weight":1
 ae "kliknąć -> łączać" "kliknąć" > "łączać"
 ce "kliknąć -> łączać"  "ui.label":1
 ce "kliknąć -> łączać"  "weight":1
@@ -81,27 +132,42 @@ ce "łączać -> wideo"  "weight":1
 ae "wideo -> onliny" "wideo" > "onliny"
 ce "wideo -> onliny"  "ui.label":1
 ce "wideo -> onliny"  "weight":1
-ae "onliny -> wstayć" "onliny" > "wstayć"
-ce "onliny -> wstayć"  "ui.label":1
-ce "onliny -> wstayć"  "weight":1
+ae "onliny -> można" "onliny" > "można"
+ce "onliny -> można"  "ui.label":1
+ce "onliny -> można"  "weight":1
+ae "można -> wstayć" "można" > "wstayć"
+ce "można -> wstayć"  "ui.label":1
+ce "można -> wstayć"  "weight":1
 ae "wstayć -> kod" "wstayć" > "kod"
 ce "wstayć -> kod"  "ui.label":1
 ce "wstayć -> kod"  "weight":1
 ae "kod -> osadzać" "kod" > "osadzać"
 ce "kod -> osadzać"  "ui.label":1
 ce "kod -> osadzać"  "weight":1
-ae "osadzać -> wideo" "osadzać" > "wideo"
-ce "osadzać -> wideo"  "ui.label":1
-ce "osadzać -> wideo"  "weight":1
-ae "wideo -> chcieć" "wideo" > "chcieć"
-ce "wideo -> chcieć"  "ui.label":1
-ce "wideo -> chcieć"  "weight":1
+ae "osadzać -> dla" "osadzać" > "dla"
+ce "osadzać -> dla"  "ui.label":1
+ce "osadzać -> dla"  "weight":1
+ae "dla -> wideo" "dla" > "wideo"
+ce "dla -> wideo"  "ui.label":1
+ce "dla -> wideo"  "weight":1
+ae "wideo -> które" "wideo" > "które"
+ce "wideo -> które"  "ui.label":1
+ce "wideo -> które"  "weight":1
+ae "które -> chcieć" "które" > "chcieć"
+ce "które -> chcieć"  "ui.label":1
+ce "które -> chcieć"  "weight":1
 ae "chcieć -> dodać" "chcieć" > "dodać"
 ce "chcieć -> dodać"  "ui.label":1
 ce "chcieć -> dodać"  "weight":1
 ae "dodać -> fi" "dodać" > "fi"
 ce "dodać -> fi"  "ui.label":1
 ce "dodać -> fi"  "weight":1
-ae "fi -> wideo" "fi" > "wideo"
-ce "fi -> wideo"  "ui.label":1
-ce "fi -> wideo"  "weight":1
+ae "fi -> to" "fi" > "to"
+ce "fi -> to"  "ui.label":1
+ce "fi -> to"  "weight":1
+ae "to -> też" "to" > "też"
+ce "to -> też"  "ui.label":1
+ce "to -> też"  "weight":1
+ae "też -> wideo" "też" > "wideo"
+ce "też -> wideo"  "ui.label":1
+ce "też -> wideo"  "weight":1

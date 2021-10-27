@@ -46,7 +46,7 @@ public class GraphTest extends TestCase {
     public void testDisplayGraph() throws IOException, InterruptedException {
         var file = FileManager.findFile("test.txt");
         var analyzer = new TextAnalyzer();
-        var graph = new Graph("demoGraph", analyzer.analyze(file));
+        var graph = new Graph("demoGraph", analyzer.analyzeAll(file));
         FileManager.save(graph, "testgraph");
         graph.display();
         var scanner = new Scanner(System.in); // to stop test

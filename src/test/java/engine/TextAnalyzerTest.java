@@ -6,9 +6,21 @@ import org.junit.Test;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.List;
 
 public class TextAnalyzerTest {
 
+    private boolean assertCollectionContainsTheSameElements(List<String> l1, List<String> l2) {
+        for(var s : l1) {
+            if(!l2.contains(s))
+                return false;
+        }
+        for(var s : l2) {
+            if(!l1.contains(s))
+                return false;
+        }
+        return true;
+    }
     @Test
     public void testAnalyze() throws FileNotFoundException {
         var analyzer = new TextAnalyzer();
@@ -32,6 +44,17 @@ public class TextAnalyzerTest {
         var file = FileManager.findFile("test.txt");
         FileManager.save(analyzer.analyze(file), ", ", "test_AnalyzedWords.txt");
     }
+
+    @Test
+    public void testAnalyzeWithWordsDictionary() throws IOException {
+        var analyzer = new TextAnalyzer();
+        var file = FileManager.findFile("test.txt");
+        var text = FileManager.read(file);
+
+        var wordsList = analyzer.analyze(text);
+        var wordsListFromDict = analyzer.analyzeAll(text);
+    }
+
 
 //    @Test
 //    public void testAnalyzeAndSaveResults() throws FileNotFoundException {
