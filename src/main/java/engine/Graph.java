@@ -79,7 +79,6 @@ public class Graph extends SingleGraph {
      * @param from node from which the edge comes out
      * @param to edge target
      * @return new edge between two nodes
-     * @TODO: 23.10.2021 if edge exist - increase weight
      */
     public Edge addEdge(Node from, Node to) {
         var id = createEdgeIndex(from,to);
