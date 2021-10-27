@@ -1,5 +1,8 @@
 DGS004
 null 0 0
+an "START"
+cn "START"  "ui.label":"START"
+cn "START"  "ui.style":"fill-color: rgba(0,0,0,0);"
 an "wideo"
 cn "wideo"  "ui.label":"wideo"
 cn "wideo"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
@@ -81,6 +84,9 @@ cn "to"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px
 an "też"
 cn "też"  "ui.label":"też"
 cn "też"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+ae "START -> wideo" "START" > "wideo"
+ce "START -> wideo"  "ui.label":1
+ce "START -> wideo"  "weight":1
 ae "wideo -> może" "wideo" > "może"
 ce "wideo -> może"  "ui.label":1
 ce "wideo -> może"  "weight":1

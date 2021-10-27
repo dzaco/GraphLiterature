@@ -16,6 +16,7 @@ public class Graph extends SingleGraph {
     }
     public Graph(String id) {
         super(id,false,false);
+        System.setProperty("gs.ui.renderer", "org.graphstream.ui.j2dviewer.J2DGraphRenderer");
     }
     public Graph(String id, List<String> words) {
         this(id);
@@ -35,6 +36,9 @@ public class Graph extends SingleGraph {
      * @return this graph
      */
     public Graph build(List<String> words) {
+
+        this.addStartNodeLinkedTo(words.get(0));
+
         // the last word node will be added with last but one word in last iteration as nextWord
         for ( int i = 0; i < words.size() - 1; i++ ) {
             String word = words.get(i);
@@ -42,6 +46,19 @@ public class Graph extends SingleGraph {
             this.add(word, nextWord);
         }
         return this;
+    }
+
+    private Node addStartNodeLinkedTo(String word) {
+        var startNode = this.addStartNode();
+        var wordNode = this.add(word);
+        var edge = this.addEdge(startNode, wordNode);
+        return wordNode;
+    }
+
+    private Node addStartNode() {
+        var start = this.add("START");
+        start.addAttribute("ui.style","fill-color: rgba(0,0,0,0);");
+        return start;
     }
 
     public Node add(String word) {
