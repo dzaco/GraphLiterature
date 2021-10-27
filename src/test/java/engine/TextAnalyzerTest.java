@@ -26,6 +26,13 @@ public class TextAnalyzerTest {
         }
     }
 
+    @Test
+    public void testSaveAnalyzedWords() throws IOException {
+        var analyzer = new TextAnalyzer();
+        var file = FileManager.findFile("test.txt");
+        FileManager.save(analyzer.analyze(file), ", ", "test_AnalyzedWords.txt");
+    }
+
 //    @Test
 //    public void testAnalyzeAndSaveResults() throws FileNotFoundException {
 //        var analyzer = new TextAnalyzer();

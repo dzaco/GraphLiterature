@@ -40,8 +40,11 @@ public class Graph extends SingleGraph {
 
     public Node add(String word) {
         var wordNode = this.getNode(word);
-        if(wordNode == null)
+        if(wordNode == null) {
             wordNode = this.addNode(word);
+            wordNode.addAttribute("ui.label", word );
+            wordNode.addAttribute("ui.style","fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;");
+        }
         return wordNode;
     }
 
@@ -83,9 +86,14 @@ public class Graph extends SingleGraph {
         var edge = getEdge(id);
         if(edge == null) {
             edge = super.addEdge(id, from, to, true);
+            edge.addAttribute("weight", 1);
+            edge.addAttribute("ui.label", 1);
         }
         else {
-            // TODO: increase edge weight - stronger connection between this two words
+            int weight = edge.getAttribute("weight");
+            weight++;
+            edge.addAttribute("weight", weight);
+            edge.addAttribute("ui.label", weight);
         }
         return edge;
     }
