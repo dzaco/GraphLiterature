@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaFX.Controller">
+   <top>
+      <MenuBar prefHeight="38.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Read" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="DarkMode" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <HBox prefHeight="362.0" prefWidth="159.0" BorderPane.alignment="CENTER" />
+   </left>
+   <center>
+      <VBox prefHeight="362.0" prefWidth="0.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="95.0" prefWidth="287.0" text=" Graphs and litterature" textAlignment="CENTER">
+               <font>
+                  <Font name="Bell MT" size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnNewWindowGraphView" mnemonicParsing="false" onAction="#handleBtnGraphView" prefHeight="54.0" prefWidth="243.0" text="Graph View" />
+            <Button fx:id="btnNewWindowStatisticView" mnemonicParsing="false" onAction="#handleBtnStatisticView" prefHeight="54.0" prefWidth="245.0" text="Statistic View" />
+            <Button fx:id="btnNewWindowAnalizedWords" mnemonicParsing="false" onAction="#handleBtnAnalizedWords" prefHeight="54.0" prefWidth="239.0" text="Analized" />
+         </children>
+      </VBox>
+   </center>
+   <right>
+      <HBox prefHeight="362.0" prefWidth="207.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>
