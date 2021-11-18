@@ -22,7 +22,7 @@ public class Controller {
     @FXML
     void handleBtnGraphView(ActionEvent event) throws IOException {
         System.out.println("WORKS");
-        Parent root = FXMLLoader.load(getClass().getResource("/graph_view.fxml.fxml.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/graph_view.fxml"));
         Scene scene = new Scene(root);
         Stage stage = new Stage();
         stage.setTitle("Graph View");
@@ -35,7 +35,7 @@ public class Controller {
     @FXML
     void handleBtnAnalizedWords(ActionEvent event) throws IOException {
         System.out.println("WORKS");
-        Parent root = FXMLLoader.load(getClass().getResource("/statistic_view.fxml.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/statistic_view.fxml"));
         Scene scene = new Scene(root);
         Stage stage = new Stage();
         stage.setTitle("Graph View");
@@ -48,7 +48,7 @@ public class Controller {
     @FXML
     void handleBtnStatisticView(ActionEvent event) throws IOException {
         System.out.println("WORKS");
-        Parent root = FXMLLoader.load(getClass().getResource("/analized_words_view.fxml.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/analized_words_view.fxml"));
         Scene scene = new Scene(root);
         Stage stage = new Stage();
         stage.setTitle("Graph View");
