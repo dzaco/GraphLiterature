@@ -33,4 +33,11 @@ public class FileManagerTest {
         var graph = GraphFactory.build(7,3);
         FileManager.save(graph, "testGraph.dgs");
     }
+
+    @Test
+    public void testFindFile() throws FileNotFoundException {
+        var fileName = "test.txt";
+        var file = FileManager.findFile(fileName);
+        Assert.assertTrue(file.exists());
+    }
 }

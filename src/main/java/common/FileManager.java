@@ -66,13 +66,7 @@ public class FileManager {
      */
     public static File findFile(String name) throws FileNotFoundException {
         var resources = getResources();
-        if(resources.listFiles() == null)
-            return new File(resources.getAbsolutePath() + "/" + name);
-
-        return Arrays.stream(Objects.requireNonNull(resources.listFiles()))
-                .filter( file -> file.getName().equals(name))
-                .findFirst()
-                .orElse( new File(resources.getAbsolutePath() + "/" + name) );
+        return new File(resources.getAbsolutePath() + "/" + name);
     }
     /**
      * search file in resources
