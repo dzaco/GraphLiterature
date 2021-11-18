@@ -40,4 +40,19 @@ public class FileManagerTest {
         var file = FileManager.findFile(fileName);
         Assert.assertTrue(file.exists());
     }
+
+    @Test
+    public void testGetBooksDir_shouldCreateNewDir() throws IOException {
+        var booksDir = FileManager.findFile("Books");
+        if(booksDir.exists())
+            booksDir.delete();
+
+        var dir = FileManager.getBooksDir();
+        Assert.assertTrue(dir.exists() && dir.isDirectory());
+    }
+    @Test
+    public void testGetBooksDir_shouldReturnDir() throws IOException {
+        var dir = FileManager.getBooksDir();
+        Assert.assertTrue(dir.exists() && dir.isDirectory());
+    }
 }

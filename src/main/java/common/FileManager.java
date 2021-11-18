@@ -57,6 +57,12 @@ public class FileManager {
         if(!file.exists()) throw new FileNotFoundException();
         else return new File(path);
     }
+    public static File getBooksDir() throws IOException {
+        var dir = findFile("Books");
+        if(!dir.exists() || !dir.isDirectory())
+            dir.mkdir();
+        return dir;
+    }
 
     /**
      * search file in resources
