@@ -1,23 +1,35 @@
 package common;
 
+import com.testautomationguru.utility.PDFUtil;
 import engine.Graph;
 import engine.MapGraph;
 
+import javax.swing.*;
+import javax.swing.filechooser.FileNameExtensionFilter;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
 import java.util.Optional;
 
 public class FileManager {
 
     public static String read(File file) throws  IOException {
-        byte[] encoded = Files.readAllBytes(file.toPath());
-        return new String(encoded, StandardCharsets.UTF_8);
+        var extension = getExtension(file.getPath());
+        if(extension.isPresent() && extension.get().equals(".pdf"))
+        {
+            String content = null;
+            PDFUtil pdfUtil = new PDFUtil();
+            content = pdfUtil.getText(file.getAbsolutePath());
+            return content;
+        }
+        else
+        {
+            byte[] encoded = Files.readAllBytes(file.toPath());
+            return new String(encoded, StandardCharsets.UTF_8);
+        }
     }
 
     /**
@@ -87,6 +99,19 @@ public class FileManager {
         return file;
     }
 
+    public static File choosePdfFile() {
+        String path = "";
+        JFileChooser chooser = new JFileChooser();
+        chooser.setCurrentDirectory(new java.io.File(""));
+        chooser.setDialogTitle("Select a PDF file");
+        chooser.setFileFilter(new FileNameExtensionFilter("PDF File", "PDF","PDF"));
+        if(chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION)
+            path = chooser.getSelectedFile().getPath().replace("\\","\\\\");
+        else
+            JOptionPane.showMessageDialog(null, "Error selecting the file", "Error", JOptionPane.ERROR_MESSAGE);
+        return new File(path);
+    }
+
     public static File save(List<String> words, String separator, String fileName) throws IOException {
         var extension = getExtension(fileName);
         File file = extension.isPresent() ? findFile(fileName) : findFile(fileName + txt);
@@ -117,5 +142,10 @@ public class FileManager {
         File file = extension.isPresent() ? findFile(fileName) : findFile(fileName + dgs);
         graph.write(file.getAbsolutePath());
         return file;
+    }
+
+    public static String chooseAndReadPdf() throws IOException {
+        var pdf = choosePdfFile();
+        return read(pdf);
     }
 }

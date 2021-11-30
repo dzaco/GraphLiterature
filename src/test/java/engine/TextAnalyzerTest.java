@@ -55,6 +55,18 @@ public class TextAnalyzerTest {
         var wordsListFromDict = analyzer.analyzeAll(text);
     }
 
+    @Test
+    public void testAnalyzeFromPdf() throws IOException {
+        var analyzer = new TextAnalyzer();
+        var text = FileManager.chooseAndReadPdf();
+        if(text != null)
+        {
+            var analyzedWords = analyzer.analyze(text);
+            Assert.assertTrue(analyzedWords.size() > 0);
+        }
+        else
+            Assert.fail();
+    }
 
 //    @Test
 //    public void testAnalyzeAndSaveResults() throws FileNotFoundException {

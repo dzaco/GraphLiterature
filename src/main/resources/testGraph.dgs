@@ -6,12 +6,12 @@ cn "START"  "ui.style":"fill-color: rgba(0,0,0,0);"
 an "wideo"
 cn "wideo"  "ui.label":"wideo"
 cn "wideo"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
-an "mo?e"
-cn "mo?e"  "ui.label":"mo?e"
-cn "mo?e"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
-an "by?"
-cn "by?"  "ui.label":"by?"
-cn "by?"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "mo偶e"
+cn "mo偶e"  "ui.label":"mo偶e"
+cn "mo偶e"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "by膰"
+cn "by膰"  "ui.label":"by膰"
+cn "by膰"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
 an "bardzo"
 cn "bardzo"  "ui.label":"bardzo"
 cn "bardzo"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
@@ -24,81 +24,78 @@ cn "w"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;
 an "przedstawienie"
 cn "przedstawienie"  "ui.label":"przedstawienie"
 cn "przedstawienie"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
-an "sw骿"
-cn "sw骿"  "ui.label":"sw骿"
-cn "sw骿"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "sw贸j"
+cn "sw贸j"  "ui.label":"sw贸j"
+cn "sw贸j"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
 an "punkt"
 cn "punkt"  "ui.label":"punkt"
 cn "punkt"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
-an "widzie?"
-cn "widzie?"  "ui.label":"widzie?"
-cn "widzie?"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "widzie膰"
+cn "widzie膰"  "ui.label":"widzie膰"
+cn "widzie膰"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
 an "nie"
 cn "nie"  "ui.label":"nie"
 cn "nie"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
-an "m骿"
-cn "m骿"  "ui.label":"m骿"
-cn "m骿"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "m贸j"
+cn "m贸j"  "ui.label":"m贸j"
+cn "m贸j"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
 an "po"
 cn "po"  "ui.label":"po"
 cn "po"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
-an "klikn??"
-cn "klikn??"  "ui.label":"klikn??"
-cn "klikn??"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
-an "??cza?"
-cn "??cza?"  "ui.label":"??cza?"
-cn "??cza?"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "klikn膮膰"
+cn "klikn膮膰"  "ui.label":"klikn膮膰"
+cn "klikn膮膰"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "艂膮cza膰"
+cn "艂膮cza膰"  "ui.label":"艂膮cza膰"
+cn "艂膮cza膰"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
 an "onliny"
 cn "onliny"  "ui.label":"onliny"
 cn "onliny"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
-an "mo?na"
-cn "mo?na"  "ui.label":"mo?na"
-cn "mo?na"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
-an "wstay?"
-cn "wstay?"  "ui.label":"wstay?"
-cn "wstay?"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "mo偶na"
+cn "mo偶na"  "ui.label":"mo偶na"
+cn "mo偶na"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "wstay膰"
+cn "wstay膰"  "ui.label":"wstay膰"
+cn "wstay膰"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
 an "kod"
 cn "kod"  "ui.label":"kod"
 cn "kod"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
-an "osadza?"
-cn "osadza?"  "ui.label":"osadza?"
-cn "osadza?"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "osadza膰"
+cn "osadza膰"  "ui.label":"osadza膰"
+cn "osadza膰"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
 an "dla"
 cn "dla"  "ui.label":"dla"
 cn "dla"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
-an "kt髍e"
-cn "kt髍e"  "ui.label":"kt髍e"
-cn "kt髍e"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
-an "chcie?"
-cn "chcie?"  "ui.label":"chcie?"
-cn "chcie?"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
-an "doda?"
-cn "doda?"  "ui.label":"doda?"
-cn "doda?"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "kt贸re"
+cn "kt贸re"  "ui.label":"kt贸re"
+cn "kt贸re"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "chcie膰"
+cn "chcie膰"  "ui.label":"chcie膰"
+cn "chcie膰"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "doda膰"
+cn "doda膰"  "ui.label":"doda膰"
+cn "doda膰"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
 an "fi"
 cn "fi"  "ui.label":"fi"
 cn "fi"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
 an "to"
 cn "to"  "ui.label":"to"
 cn "to"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
-an "te?"
-cn "te?"  "ui.label":"te?"
-cn "te?"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
-an ""
-cn ""  "ui.label":""
-cn ""  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "te偶"
+cn "te偶"  "ui.label":"te偶"
+cn "te偶"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
 ae "START -> wideo" "START" > "wideo"
 ce "START -> wideo"  "ui.label":1
 ce "START -> wideo"  "weight":1
-ae "wideo -> mo?e" "wideo" > "mo?e"
-ce "wideo -> mo?e"  "ui.label":1
-ce "wideo -> mo?e"  "weight":1
-ae "mo?e -> by?" "mo?e" > "by?"
-ce "mo?e -> by?"  "ui.label":1
-ce "mo?e -> by?"  "weight":1
-ae "by? -> bardzo" "by?" > "bardzo"
-ce "by? -> bardzo"  "ui.label":1
-ce "by? -> bardzo"  "weight":1
+ae "wideo -> mo偶e" "wideo" > "mo偶e"
+ce "wideo -> mo偶e"  "ui.label":1
+ce "wideo -> mo偶e"  "weight":1
+ae "mo偶e -> by膰" "mo偶e" > "by膰"
+ce "mo偶e -> by膰"  "ui.label":1
+ce "mo偶e -> by膰"  "weight":1
+ae "by膰 -> bardzo" "by膰" > "bardzo"
+ce "by膰 -> bardzo"  "ui.label":1
+ce "by膰 -> bardzo"  "weight":1
 ae "bardzo -> pomocny" "bardzo" > "pomocny"
 ce "bardzo -> pomocny"  "ui.label":1
 ce "bardzo -> pomocny"  "weight":1
@@ -108,78 +105,75 @@ ce "pomocny -> w"  "weight":1
 ae "w -> przedstawienie" "w" > "przedstawienie"
 ce "w -> przedstawienie"  "ui.label":1
 ce "w -> przedstawienie"  "weight":1
-ae "przedstawienie -> sw骿" "przedstawienie" > "sw骿"
-ce "przedstawienie -> sw骿"  "ui.label":1
-ce "przedstawienie -> sw骿"  "weight":1
-ae "sw骿 -> punkt" "sw骿" > "punkt"
-ce "sw骿 -> punkt"  "ui.label":1
-ce "sw骿 -> punkt"  "weight":1
-ae "punkt -> widzie?" "punkt" > "widzie?"
-ce "punkt -> widzie?"  "ui.label":2
-ce "punkt -> widzie?"  "weight":2
-ae "widzie? -> nie" "widzie?" > "nie"
-ce "widzie? -> nie"  "ui.label":1
-ce "widzie? -> nie"  "weight":1
-ae "nie -> m骿" "nie" > "m骿"
-ce "nie -> m骿"  "ui.label":1
-ce "nie -> m骿"  "weight":1
-ae "m骿 -> punkt" "m骿" > "punkt"
-ce "m骿 -> punkt"  "ui.label":1
-ce "m骿 -> punkt"  "weight":1
-ae "widzie? -> po" "widzie?" > "po"
-ce "widzie? -> po"  "ui.label":1
-ce "widzie? -> po"  "weight":1
-ae "po -> klikn??" "po" > "klikn??"
-ce "po -> klikn??"  "ui.label":1
-ce "po -> klikn??"  "weight":1
-ae "klikn?? -> ??cza?" "klikn??" > "??cza?"
-ce "klikn?? -> ??cza?"  "ui.label":1
-ce "klikn?? -> ??cza?"  "weight":1
-ae "??cza? -> wideo" "??cza?" > "wideo"
-ce "??cza? -> wideo"  "ui.label":1
-ce "??cza? -> wideo"  "weight":1
+ae "przedstawienie -> sw贸j" "przedstawienie" > "sw贸j"
+ce "przedstawienie -> sw贸j"  "ui.label":1
+ce "przedstawienie -> sw贸j"  "weight":1
+ae "sw贸j -> punkt" "sw贸j" > "punkt"
+ce "sw贸j -> punkt"  "ui.label":1
+ce "sw贸j -> punkt"  "weight":1
+ae "punkt -> widzie膰" "punkt" > "widzie膰"
+ce "punkt -> widzie膰"  "ui.label":2
+ce "punkt -> widzie膰"  "weight":2
+ae "widzie膰 -> nie" "widzie膰" > "nie"
+ce "widzie膰 -> nie"  "ui.label":1
+ce "widzie膰 -> nie"  "weight":1
+ae "nie -> m贸j" "nie" > "m贸j"
+ce "nie -> m贸j"  "ui.label":1
+ce "nie -> m贸j"  "weight":1
+ae "m贸j -> punkt" "m贸j" > "punkt"
+ce "m贸j -> punkt"  "ui.label":1
+ce "m贸j -> punkt"  "weight":1
+ae "widzie膰 -> po" "widzie膰" > "po"
+ce "widzie膰 -> po"  "ui.label":1
+ce "widzie膰 -> po"  "weight":1
+ae "po -> klikn膮膰" "po" > "klikn膮膰"
+ce "po -> klikn膮膰"  "ui.label":1
+ce "po -> klikn膮膰"  "weight":1
+ae "klikn膮膰 -> 艂膮cza膰" "klikn膮膰" > "艂膮cza膰"
+ce "klikn膮膰 -> 艂膮cza膰"  "ui.label":1
+ce "klikn膮膰 -> 艂膮cza膰"  "weight":1
+ae "艂膮cza膰 -> wideo" "艂膮cza膰" > "wideo"
+ce "艂膮cza膰 -> wideo"  "ui.label":1
+ce "艂膮cza膰 -> wideo"  "weight":1
 ae "wideo -> onliny" "wideo" > "onliny"
 ce "wideo -> onliny"  "ui.label":1
 ce "wideo -> onliny"  "weight":1
-ae "onliny -> mo?na" "onliny" > "mo?na"
-ce "onliny -> mo?na"  "ui.label":1
-ce "onliny -> mo?na"  "weight":1
-ae "mo?na -> wstay?" "mo?na" > "wstay?"
-ce "mo?na -> wstay?"  "ui.label":1
-ce "mo?na -> wstay?"  "weight":1
-ae "wstay? -> kod" "wstay?" > "kod"
-ce "wstay? -> kod"  "ui.label":1
-ce "wstay? -> kod"  "weight":1
-ae "kod -> osadza?" "kod" > "osadza?"
-ce "kod -> osadza?"  "ui.label":1
-ce "kod -> osadza?"  "weight":1
-ae "osadza? -> dla" "osadza?" > "dla"
-ce "osadza? -> dla"  "ui.label":1
-ce "osadza? -> dla"  "weight":1
+ae "onliny -> mo偶na" "onliny" > "mo偶na"
+ce "onliny -> mo偶na"  "ui.label":1
+ce "onliny -> mo偶na"  "weight":1
+ae "mo偶na -> wstay膰" "mo偶na" > "wstay膰"
+ce "mo偶na -> wstay膰"  "ui.label":1
+ce "mo偶na -> wstay膰"  "weight":1
+ae "wstay膰 -> kod" "wstay膰" > "kod"
+ce "wstay膰 -> kod"  "ui.label":1
+ce "wstay膰 -> kod"  "weight":1
+ae "kod -> osadza膰" "kod" > "osadza膰"
+ce "kod -> osadza膰"  "ui.label":1
+ce "kod -> osadza膰"  "weight":1
+ae "osadza膰 -> dla" "osadza膰" > "dla"
+ce "osadza膰 -> dla"  "ui.label":1
+ce "osadza膰 -> dla"  "weight":1
 ae "dla -> wideo" "dla" > "wideo"
 ce "dla -> wideo"  "ui.label":1
 ce "dla -> wideo"  "weight":1
-ae "wideo -> kt髍e" "wideo" > "kt髍e"
-ce "wideo -> kt髍e"  "ui.label":1
-ce "wideo -> kt髍e"  "weight":1
-ae "kt髍e -> chcie?" "kt髍e" > "chcie?"
-ce "kt髍e -> chcie?"  "ui.label":1
-ce "kt髍e -> chcie?"  "weight":1
-ae "chcie? -> doda?" "chcie?" > "doda?"
-ce "chcie? -> doda?"  "ui.label":1
-ce "chcie? -> doda?"  "weight":1
-ae "doda? -> fi" "doda?" > "fi"
-ce "doda? -> fi"  "ui.label":1
-ce "doda? -> fi"  "weight":1
+ae "wideo -> kt贸re" "wideo" > "kt贸re"
+ce "wideo -> kt贸re"  "ui.label":1
+ce "wideo -> kt贸re"  "weight":1
+ae "kt贸re -> chcie膰" "kt贸re" > "chcie膰"
+ce "kt贸re -> chcie膰"  "ui.label":1
+ce "kt贸re -> chcie膰"  "weight":1
+ae "chcie膰 -> doda膰" "chcie膰" > "doda膰"
+ce "chcie膰 -> doda膰"  "ui.label":1
+ce "chcie膰 -> doda膰"  "weight":1
+ae "doda膰 -> fi" "doda膰" > "fi"
+ce "doda膰 -> fi"  "ui.label":1
+ce "doda膰 -> fi"  "weight":1
 ae "fi -> to" "fi" > "to"
 ce "fi -> to"  "ui.label":1
 ce "fi -> to"  "weight":1
-ae "to -> te?" "to" > "te?"
-ce "to -> te?"  "ui.label":1
-ce "to -> te?"  "weight":1
-ae "te? -> wideo" "te?" > "wideo"
-ce "te? -> wideo"  "ui.label":1
-ce "te? -> wideo"  "weight":1
-ae "wideo -> " "wideo" > ""
-ce "wideo -> "  "ui.label":1
-ce "wideo -> "  "weight":1
+ae "to -> te偶" "to" > "te偶"
+ce "to -> te偶"  "ui.label":1
+ce "to -> te偶"  "weight":1
+ae "te偶 -> wideo" "te偶" > "wideo"
+ce "te偶 -> wideo"  "ui.label":1
+ce "te偶 -> wideo"  "weight":1

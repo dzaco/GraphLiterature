@@ -35,4 +35,9 @@ public class AnalysisEntry {
     public Optional<Integer> getOccurrence() {
         return occurrence;
     }
+
+    @Override
+    public String toString() {
+        return word + " -> " + analyzedWord;
+    }
 }
