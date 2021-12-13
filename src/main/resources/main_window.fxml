@@ -7,6 +7,8 @@
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 
@@ -21,7 +23,7 @@
           </Menu>
           <Menu mnemonicParsing="false" text="Edit">
             <items>
-              <MenuItem mnemonicParsing="false" text="Light Mode" onAction="#readFile" />
+              <MenuItem mnemonicParsing="false" onAction="#readFile" text="Light Mode" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Help">
@@ -39,14 +41,20 @@
                <children>
                   <Button fx:id="btnDirectoryStructure" layoutX="-3.0" layoutY="30.0" mnemonicParsing="false" onAction="#handles" prefHeight="34.0" prefWidth="181.0" text="Drop Books" />
                   <Button layoutX="-2.0" layoutY="-2.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="179.0" text="RunAnalyzer" />
-                  <BorderPane fx:id="borderDirectory" layoutX="-1.0" layoutY="97.0" prefHeight="466.0" prefWidth="178.0" />
+                  <BorderPane fx:id="borderDirectory" layoutX="-1.0" layoutY="141.0" prefHeight="422.0" prefWidth="178.0" />
                   <Separator layoutX="-24.0" layoutY="25.0" prefWidth="200.0" />
-                  <Button layoutX="-2.0" layoutY="64.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="178.0" text="View Statistic" />
+                  <Button fx:id="btnStatisticView" layoutX="-2.0" layoutY="64.0" mnemonicParsing="false"  prefHeight="37.0" prefWidth="178.0" text="View Statistic" />
+                  <Button fx:id="btnViewGraph" onAction="#handleBtnGraphView" layoutX="-2.0" layoutY="102.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="178.0" text="View Graph" />
                </children>
             </AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="360.0" prefWidth="591.8">
                <children>
                   <TextArea fx:id="bookArea" prefHeight="559.0" prefWidth="814.0" />
+                  <ImageView fx:id="mainPict" fitHeight="561.0" fitWidth="817.0">
+                     <image>
+                        <Image  url="@main.png" />
+                     </image>
+                  </ImageView>
                </children></AnchorPane>
         </items>
       </SplitPane>
