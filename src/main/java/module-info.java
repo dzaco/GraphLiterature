@@ -8,5 +8,6 @@ module GraphLiterature {
     requires lucene.core;
     requires lucene.analyzers.stempel;
     requires javafx.fxml;
+    //requires gs.algo;
     opens javaFX;
 }

@@ -6,12 +6,25 @@ import javafx.application.Application;
 import javafx.application.HostServices;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import org.apache.lucene.util.ToStringUtils;
+import org.graphstream.graph.Graph;
+import org.graphstream.graph.implementations.DefaultGraph;
+import org.graphstream.graph.implementations.SingleGraph;
+import org.graphstream.stream.GraphParseException;
+import org.graphstream.stream.file.FileSource;
+import org.graphstream.stream.file.FileSourceFactory;
 
 import java.io.*;
 import java.nio.file.Files;
@@ -20,39 +33,56 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Controller{
-
+    public String displayFilename;
     @FXML
     public TextArea bookArea;
-
+    @FXML
+    public ImageView mainPict;
     Alert a = new Alert(Alert.AlertType.NONE); // value for alert type
-
+    @FXML
+    public Button btnViewGraph;
     @FXML
     private BorderPane borderDirectory;
 
-    /*
-    void handleBtnGraphView(ActionEvent event) throws IOException {
+    @FXML
+    void handleBtnGraphView(ActionEvent event) throws IOException { //Func which display graph in PNG OR JPG
         System.out.println("WORKS");
-        Parent root = FXMLLoader.load(getClass().getResource("/graph_view.fxml"));
+        //Parent root = FXMLLoader.load(getClass().getResource("/graph_view.fxml"));
+        readPNG(event);
+        Image image = new Image(displayFilename);
+        ImageView imageView = new ImageView(image);
+        Button saveBtn = new Button("Save Image");
+        VBox root = new VBox(10, imageView, saveBtn);
         Scene scene = new Scene(root);
         Stage stage = new Stage();
         stage.setTitle("Graph View");
         stage.setScene(scene);
-        //modal new window
         stage.initModality(Modality.WINDOW_MODAL); //default
-        stage.initOwner(btnNewWindowGraphView.getScene().getWindow());
+        stage.initOwner(btnViewGraph.getScene().getWindow());
         stage.show();
     }
-     */
     @FXML
-    public void readFile(ActionEvent e) throws FileNotFoundException { // Func ReadingFile
-        Stage stage = (Stage) bookArea.getScene().getWindow(); // take stage from
-        //ArrayList<String> listOfWords = new ArrayList<String>();
-        //String[] str = new String[listOfWords.size()];
+    public void readPNG(ActionEvent e) throws FileNotFoundException{
         FileChooser fileChooser = new FileChooser();
-        fileChooser.setInitialDirectory(new File(System.getProperty("user.home") + "\\Desktop"));
+        fileChooser.setInitialDirectory(new File(System.getProperty("user.home") + "\\Desktop\\GrapH_Project\\GraphLiterature\\src\\main\\resources"));
+        // Set extension filter, only PDF files will be shown
+        FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("Png or jpg ", "*.png","*.jpg");
+        fileChooser.getExtensionFilters().add(extFilter);
+        Stage stage = (Stage) bookArea.getScene().getWindow();
+        File file = fileChooser.showOpenDialog(stage);
+        String fileName = file.getPath();
+        displayFilename=fileName;
+        System.out.println(fileName);
+    }
+    @FXML
+    public void readFile(ActionEvent e) throws FileNotFoundException  { // Func ReadingFile
+        Stage stage = (Stage) bookArea.getScene().getWindow(); // take stage from
+        clear();
+        FileChooser fileChooser = new FileChooser();
+        fileChooser.setInitialDirectory(new File(System.getProperty("user.home") + "\\Desktop\\GrapH_Project\\GraphLiterature\\src\\main\\resources"));
 
         // Set extension filter, only PDF files will be shown
-        FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("PDF files or TXT (*.txt) (*.pdf)", "*.txt","*.pdf");
+        FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("PDF files or TXT (*.txt) ", "*.txt");
         fileChooser.getExtensionFilters().add(extFilter);
 
         // Show open file dialog
@@ -78,21 +108,6 @@ public class Controller{
         String listString = String.join("\n ", lines);
         bookArea.setText(listString);
     }
-
-  @FXML
-    void handleBtnAnalizedWords(ActionEvent event) throws IOException {
-        System.out.println("WORKS");
-        Parent root = FXMLLoader.load(getClass().getResource("/statistic_view.fxml"));
-        Scene scene = new Scene(root);
-        Stage stage = new Stage();
-        stage.setTitle("Graph View");
-        stage.setScene(scene);
-        //modal new window
-        stage.initModality(Modality.WINDOW_MODAL); //default
-        stage.initOwner(btnNewWindowAnalizedWords.getScene().getWindow());
-        stage.show();
-    }
-
     @FXML
     public void handles(ActionEvent e) {
         Stage stage = (Stage) borderDirectory.getScene().getWindow(); // take stage from
@@ -110,35 +125,7 @@ public class Controller{
         }
         borderDirectory.setTop(a);
     }
-    public void handles() {
-        Stage stage = (Stage) borderDirectory.getScene().getWindow(); // take stage from
-        TreeView<String> a = new TreeView<String>();
-        DirectoryChooser dc = new DirectoryChooser();
-        dc.setInitialDirectory(new File(System.getProperty("user.home") + "\\Desktop\\GrapH_Project\\GraphLiterature\\src\\main\\resources\\Books")); //DekstopRequired
-        File choice = dc.showDialog(stage);
-        if(choice == null || ! choice.isDirectory()) {
-            Alert alert = new Alert(Alert.AlertType.ERROR);
-            alert.setHeaderText("Could not open directory");
-            alert.setContentText("The file is invalid.");
-            alert.showAndWait();
-        } else {
-            a.setRoot(getNodesForDirectory(choice));
-        }
-        borderDirectory.setTop(a);
-    }
-  @FXML
-    void handleBtnStatisticView(ActionEvent event) throws IOException {
-        System.out.println("WORKS");
-        Parent root = FXMLLoader.load(getClass().getResource("/analized_words_view.fxml"));
-        Scene scene = new Scene(root);
-        Stage stage = new Stage();
-        stage.setTitle("Graph View");
-        stage.setScene(scene);
-        //modal new window
-        stage.initModality(Modality.WINDOW_MODAL); //default
-        stage.initOwner(btnNewWindowStatisticView.getScene().getWindow());
-        stage.show();
-    }
+
     public TreeItem<String> getNodesForDirectory(File directory){
         TreeItem<String> root = new TreeItem<String>(directory.getName());
         for(File f : directory.listFiles()) {
@@ -150,6 +137,9 @@ public class Controller{
             }
         }
         return root;
+    }
+    public void clear(){
+        mainPict.setImage(null);
     }
 
 
