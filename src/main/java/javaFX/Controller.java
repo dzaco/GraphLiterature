@@ -77,7 +77,20 @@ public class Controller{
         }
         String listString = String.join("\n ", lines);
         bookArea.setText(listString);
+    }
 
+  @FXML
+    void handleBtnAnalizedWords(ActionEvent event) throws IOException {
+        System.out.println("WORKS");
+        Parent root = FXMLLoader.load(getClass().getResource("/statistic_view.fxml"));
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setTitle("Graph View");
+        stage.setScene(scene);
+        //modal new window
+        stage.initModality(Modality.WINDOW_MODAL); //default
+        stage.initOwner(btnNewWindowAnalizedWords.getScene().getWindow());
+        stage.show();
     }
 
     @FXML
@@ -112,6 +125,19 @@ public class Controller{
             a.setRoot(getNodesForDirectory(choice));
         }
         borderDirectory.setTop(a);
+    }
+  @FXML
+    void handleBtnStatisticView(ActionEvent event) throws IOException {
+        System.out.println("WORKS");
+        Parent root = FXMLLoader.load(getClass().getResource("/analized_words_view.fxml"));
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setTitle("Graph View");
+        stage.setScene(scene);
+        //modal new window
+        stage.initModality(Modality.WINDOW_MODAL); //default
+        stage.initOwner(btnNewWindowStatisticView.getScene().getWindow());
+        stage.show();
     }
     public TreeItem<String> getNodesForDirectory(File directory){
         TreeItem<String> root = new TreeItem<String>(directory.getName());
