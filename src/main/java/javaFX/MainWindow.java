@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+
 public class MainWindow extends Application {
 
     public static void main(String[] args) {
@@ -16,7 +17,8 @@ public class MainWindow extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/main_window.fxml"));
         stage.setTitle("MainWindow Welcome");
-        stage.setScene(new Scene(root,600,400));
+        stage.setScene(new Scene(root,1000,600));
+        root.getStylesheets().add(getClass().getResource("/application.css").toExternalForm());
         stage.show();
     }
 }
