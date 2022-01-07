@@ -1,2 +1,4 @@
 # Project exclude paths
 /target/
+/src/main/resources/test.jpg
+/src/main/java/common/TextttoGraph
