@@ -43,7 +43,8 @@ public class Controller{
     public Button btnViewGraph;
     @FXML
     private BorderPane borderDirectory;
-
+    @FXML
+    
     @FXML
     void handleBtnGraphView(ActionEvent event) throws IOException { //Func which display graph in PNG OR JPG
         System.out.println("WORKS");
