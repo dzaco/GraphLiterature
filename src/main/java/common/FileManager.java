@@ -2,7 +2,8 @@ package common;
 
 import engine.Graph;
 import engine.MapGraph;
-
+import javax.swing.*;
+import javax.swing.filechooser.FileNameExtensionFilter;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -117,5 +118,17 @@ public class FileManager {
         File file = extension.isPresent() ? findFile(fileName) : findFile(fileName + dgs);
         graph.write(file.getAbsolutePath());
         return file;
+    }
+    public static File choosePdfFile() {
+        String path = "";
+        JFileChooser chooser = new JFileChooser();
+        chooser.setCurrentDirectory(new java.io.File(""));
+        chooser.setDialogTitle("Select a PDF file");
+        chooser.setFileFilter(new FileNameExtensionFilter("PDF File", "PDF","PDF"));
+        if(chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION)
+            path = chooser.getSelectedFile().getPath().replace("\\","\\\\");
+        else
+            JOptionPane.showMessageDialog(null, "Error selecting the file", "Error", JOptionPane.ERROR_MESSAGE);
+        return new File(path);
     }
 }
