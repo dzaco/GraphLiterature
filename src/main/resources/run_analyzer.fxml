@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="377.0" prefWidth="613.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaFX.AnalyzerController">
+   <center>
+      <Button mnemonicParsing="false" onAction="#AnalyzeFromPdf" prefHeight="115.0" prefWidth="320.0" text="RUN ANALYZER" textFill="WHITE" textOverrun="WORD_ELLIPSIS" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Bodoni MT Italic" size="28.0" />
+         </font></Button>
+   </center>
+</BorderPane>
