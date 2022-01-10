@@ -1,5 +1,9 @@
 package javaFX;
 import common.FileManager;
+import engine.TextAnalyzer;
+import engine.TextStatistic;
+import engine.Graph;
+import engine.WordsStatistic;
 import javafx.application.Application;
 import javafx.application.HostServices;
 import javafx.application.Application;
@@ -7,19 +11,21 @@ import javafx.application.HostServices;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.FileChooser;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import org.apache.lucene.util.ToStringUtils;
-import org.graphstream.graph.Graph;
 import org.graphstream.graph.implementations.DefaultGraph;
 import org.graphstream.graph.implementations.SingleGraph;
 import org.graphstream.stream.GraphParseException;
@@ -27,12 +33,14 @@ import org.graphstream.stream.file.FileSource;
 import org.graphstream.stream.file.FileSourceFactory;
 
 import java.io.*;
+import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.ResourceBundle;
 
-public class Controller{
+public class Controller implements Initializable {
     public String displayFilename;
     @FXML
     public TextArea bookArea;
@@ -43,7 +51,15 @@ public class Controller{
     public Button btnViewGraph;
     @FXML
     private BorderPane borderDirectory;
+    public BorderPane mainPane;
+
     @FXML
+    private void handleButtonRunAnalyzer(ActionEvent event){
+        System.out.println("Run Analyzer");
+        FxmlLoader object = new FxmlLoader();
+        Pane view = object.getPane("run_analyzer");
+        mainPane.setCenter(view);
+    }
     
     @FXML
     void handleBtnGraphView(ActionEvent event) throws IOException { //Func which display graph in PNG OR JPG
@@ -143,6 +159,9 @@ public class Controller{
         mainPict.setImage(null);
     }
 
+    // Method to change FXML
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
 
-
+    }
 }
