@@ -12,7 +12,6 @@ public class FxmlLoader {
     public Pane getPane(String filename){
         try {
             URL fileUrl=MainWindow.class.getResource("/"+filename+".fxml");
-            Parent root = FXMLLoader.load(getClass().getResource("/main_window.fxml"));
             System.out.println("/"+filename+".fxml"+ "------" + "/main_window.fxml");
             if(fileUrl==null){
                 throw new java.io.FileNotFoundException("Not found");

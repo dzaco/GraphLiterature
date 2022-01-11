@@ -41,89 +41,60 @@ import java.util.Arrays;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
-    public String displayFilename;
-    @FXML
-    public TextArea bookArea;
     @FXML
     public ImageView mainPict;
     Alert a = new Alert(Alert.AlertType.NONE); // value for alert type
-    @FXML
-    public Button btnViewGraph;
     @FXML
     private BorderPane borderDirectory;
     public BorderPane mainPane;
 
     @FXML
     private void handleButtonRunAnalyzer(ActionEvent event){
-        System.out.println("Run Analyzer");
         FxmlLoader object = new FxmlLoader();
         Pane view = object.getPane("run_analyzer");
         mainPane.setCenter(view);
     }
-    
     @FXML
-    void handleBtnGraphView(ActionEvent event) throws IOException { //Func which display graph in PNG OR JPG
-        System.out.println("WORKS");
-        //Parent root = FXMLLoader.load(getClass().getResource("/graph_view.fxml"));
-        readPNG(event);
-        Image image = new Image(displayFilename);
-        ImageView imageView = new ImageView(image);
-        Button saveBtn = new Button("Save Image");
-        VBox root = new VBox(10, imageView, saveBtn);
-        Scene scene = new Scene(root);
-        Stage stage = new Stage();
-        stage.setTitle("Graph View");
-        stage.setScene(scene);
-        stage.initModality(Modality.WINDOW_MODAL); //default
-        stage.initOwner(btnViewGraph.getScene().getWindow());
-        stage.show();
+    private void handleButtonRunStatistic(ActionEvent event){
+        FxmlLoader object = new FxmlLoader();
+        Pane view = object.getPane("view_statistic");
+        mainPane.setCenter(view);
     }
     @FXML
-    public void readPNG(ActionEvent e) throws FileNotFoundException{
-        FileChooser fileChooser = new FileChooser();
-        fileChooser.setInitialDirectory(new File(System.getProperty("user.home") + "\\Desktop\\GrapH_Project\\GraphLiterature\\src\\main\\resources"));
-        // Set extension filter, only PDF files will be shown
-        FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("Png or jpg ", "*.png","*.jpg");
-        fileChooser.getExtensionFilters().add(extFilter);
-        Stage stage = (Stage) bookArea.getScene().getWindow();
-        File file = fileChooser.showOpenDialog(stage);
-        String fileName = file.getPath();
-        displayFilename=fileName;
-        System.out.println(fileName);
+    private void handleButtonRunResources(ActionEvent event){
+        FxmlLoader object = new FxmlLoader();
+        Pane view = object.getPane("view_sources");
+        mainPane.setCenter(view);
     }
+
     @FXML
-    public void readFile(ActionEvent e) throws FileNotFoundException  { // Func ReadingFile
-        Stage stage = (Stage) bookArea.getScene().getWindow(); // take stage from
-        clear();
-        FileChooser fileChooser = new FileChooser();
-        fileChooser.setInitialDirectory(new File(System.getProperty("user.home") + "\\Desktop\\GrapH_Project\\GraphLiterature\\src\\main\\resources"));
+    void getAbout(ActionEvent event){
+        // set alert type
+        a.setAlertType(Alert.AlertType.INFORMATION);
+        a.setTitle("Contact");
+        // set content text
+        a.setContentText("Program was created by: \n" +
+                "Jacek Giedronowicz -> https://github.com/dzaco \n" +
+                "Karol Kaim -> https://github.com/Kajmank2 \n" +
+                "Marcin Chmielewski \n"+
+                "Rafal Wiadelek \n"+
+                "If you have some question contact with us" );
+        // show the dialog
+        a.show();
+    }
 
-        // Set extension filter, only PDF files will be shown
-        FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("PDF files or TXT (*.txt) ", "*.txt");
-        fileChooser.getExtensionFilters().add(extFilter);
-
-        // Show open file dialog
-        File file = fileChooser.showOpenDialog(stage);
-        String fileName = file.getPath();
-        //BufferedReader br = new BufferedReader(new FileReader(name));
-        ArrayList<String> lines = new ArrayList<String>();
-        try {
-             lines = new ArrayList<>(Files.readAllLines(Paths.get(fileName)));
-        }
-        catch (IOException es) {
-            // Handle a potential exception
-            a.setAlertType(Alert.AlertType.ERROR);
-            // show the dialog
-            a.show();
-        }
-
-        for (String str : lines)
-        {
-            System.out.println(str);
-            bookArea.setText(str);
-        }
-        String listString = String.join("\n ", lines);
-        bookArea.setText(listString);
+    public void getInfo(ActionEvent event) {
+        a.setAlertType(Alert.AlertType.INFORMATION);
+        a.setTitle("Info about program");
+        // set content text
+        a.setContentText("That is simple program which analyze words \n" +
+                "[RunAnalyzer] -> mainFunc \n" +
+                "[ViewStatistc] -> Stats for words \n" +
+                "[ViewResources] -> Func which help us visualise result \n" +
+                "[DropBooks] -> return books tree structure \n" +
+                "HAVE FUN !!!");
+        // show the dialog
+        a.show();
     }
     @FXML
     public void handles(ActionEvent e) {
@@ -164,4 +135,5 @@ public class Controller implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
     }
+
 }

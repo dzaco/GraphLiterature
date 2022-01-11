@@ -15,19 +15,11 @@
    <top>
       <MenuBar prefHeight="38.0" prefWidth="1000" BorderPane.alignment="CENTER">
         <menus>
-          <Menu mnemonicParsing="false" text="File">
-            <items>
-              <MenuItem fx:id="readFile" mnemonicParsing="false" onAction="#readFile" text="Read" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Edit">
-            <items>
-              <MenuItem mnemonicParsing="false" onAction="#readFile" text="Light Mode" />
-            </items>
+          <Menu mnemonicParsing="false" text="Info " onAction="#getInfo">
           </Menu>
           <Menu mnemonicParsing="false" text="Help">
             <items>
-              <MenuItem mnemonicParsing="false" text="About" />
+              <MenuItem mnemonicParsing="false" onAction="#getAbout" text="Contact" />
             </items>
           </Menu>
         </menus>
@@ -37,8 +29,8 @@
       <VBox prefHeight="562.0" prefWidth="157.0" BorderPane.alignment="CENTER">
          <children>
             <Button mnemonicParsing="false" onAction="#handleButtonRunAnalyzer" prefHeight="48.0" prefWidth="157.0" text="RunAnalyzer" />
-            <Button fx:id="btnStatisticView" mnemonicParsing="false" prefHeight="53.0" prefWidth="159.0" text="View Statistic" />
-            <Button fx:id="btnViewGraph" mnemonicParsing="false" onAction="#handleBtnGraphView" prefHeight="57.0" prefWidth="158.0" text="View Graph" />
+            <Button fx:id="btnStatisticView" onAction="#handleButtonRunStatistic" mnemonicParsing="false" prefHeight="53.0" prefWidth="159.0" text="View Statistic" />
+             <Button fx:id="btnResourceView" onAction="#handleButtonRunResources" mnemonicParsing="false" prefHeight="53.0" prefWidth="159.0" text="View Statistic" />
             <Button fx:id="btnDirectoryStructure" mnemonicParsing="false" onAction="#handles" prefHeight="58.0" prefWidth="159.0" text="Drop Books" />
             <BorderPane fx:id="borderDirectory" prefHeight="346.0" prefWidth="112.0" />
          </children>

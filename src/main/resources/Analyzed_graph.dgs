@@ -1,0 +1,932 @@
+DGS004
+null 0 0
+an "START"
+cn "START"  "ui.label":"START"
+cn "START"  "ui.style":"fill-color: rgba(0,0,0,0);"
+an "theres"
+cn "theres"  "ui.label":"theres"
+cn "theres"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "talk"
+cn "talk"  "ui.label":"talk"
+cn "talk"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "the"
+cn "the"  "ui.label":"the"
+cn "the"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "streeo"
+cn "streeo"  "ui.label":"streeo"
+cn "streeo"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "it"
+cn "it"  "ui.label":"it"
+cn "it"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "sounds"
+cn "sounds"  "ui.label":"sounds"
+cn "sounds"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "so"
+cn "so"  "ui.label":"so"
+cn "so"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "familia"
+cn "familia"  "ui.label":"familia"
+cn "familia"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "great"
+cn "great"  "ui.label":"great"
+cn "great"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "expectations"
+cn "expectations"  "ui.label":"expectations"
+cn "expectations"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "everybodys"
+cn "everybodys"  "ui.label":"everybodys"
+cn "everybodys"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "watching"
+cn "watching"  "ui.label":"watching"
+cn "watching"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "you"
+cn "you"  "ui.label":"you"
+cn "you"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "peopł"
+cn "peopł"  "ui.label":"peopł"
+cn "peopł"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "ać"
+cn "ać"  "ui.label":"ać"
+cn "ać"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "they"
+cn "they"  "ui.label":"they"
+cn "they"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "all"
+cn "all"  "ui.label":"all"
+cn "all"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "seem"
+cn "seem"  "ui.label":"seem"
+cn "seem"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "knociw"
+cn "knociw"  "ui.label":"knociw"
+cn "knociw"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "even"
+cn "even"  "ui.label":"even"
+cn "even"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "yra"
+cn "yra"  "ui.label":"yra"
+cn "yra"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "old"
+cn "old"  "ui.label":"old"
+cn "old"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "friends"
+cn "friends"  "ui.label":"friends"
+cn "friends"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "treat"
+cn "treat"  "ui.label":"treat"
+cn "treat"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "like"
+cn "like"  "ui.label":"like"
+cn "like"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "youry"
+cn "youry"  "ui.label":"youry"
+cn "youry"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "something"
+cn "something"  "ui.label":"something"
+cn "something"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "new"
+cn "new"  "ui.label":"new"
+cn "new"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "johnny"
+cn "johnny"  "ui.label":"johnny"
+cn "johnny"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "comy"
+cn "comy"  "ui.label":"comy"
+cn "comy"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "lately"
+cn "lately"  "ui.label":"lately"
+cn "lately"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "kid"
+cn "kid"  "ui.label":"kid"
+cn "kid"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "in"
+cn "in"  "ui.label":"in"
+cn "in"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "town"
+cn "town"  "ui.label":"town"
+cn "town"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "everyboda"
+cn "everyboda"  "ui.label":"everyboda"
+cn "everyboda"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "loves"
+cn "loves"  "ui.label":"loves"
+cn "loves"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "dont"
+cn "dont"  "ui.label":"dont"
+cn "dont"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "let"
+cn "let"  "ui.label":"let"
+cn "let"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "them"
+cn "them"  "ui.label":"them"
+cn "them"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "down"
+cn "down"  "ui.label":"down"
+cn "down"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "look"
+cn "look"  "ui.label":"look"
+cn "look"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "her"
+cn "her"  "ui.label":"her"
+cn "her"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "eyes"
+cn "eyes"  "ui.label":"eyes"
+cn "eyes"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "musica"
+cn "musica"  "ui.label":"musica"
+cn "musica"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "begno"
+cn "begno"  "ui.label":"begno"
+cn "begno"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "play"
+cn "play"  "ui.label":"play"
+cn "play"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "hopeless"
+cn "hopeless"  "ui.label":"hopeless"
+cn "hopeless"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "romantics"
+cn "romantics"  "ui.label":"romantics"
+cn "romantics"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "hery"
+cn "hery"  "ui.label":"hery"
+cn "hery"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "aeć"
+cn "aeć"  "ui.label":"aeć"
+cn "aeć"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "but"
+cn "but"  "ui.label":"but"
+cn "but"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "after"
+cn "after"  "ui.label":"after"
+cn "after"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "awhile"
+cn "awhile"  "ui.label":"awhile"
+cn "awhile"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "looknąć"
+cn "looknąć"  "ui.label":"looknąć"
+cn "looknąć"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "other"
+cn "other"  "ui.label":"other"
+cn "other"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "way"
+cn "way"  "ui.label":"way"
+cn "way"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "its"
+cn "its"  "ui.label":"its"
+cn "its"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "thosy"
+cn "thosy"  "ui.label":"thosy"
+cn "thosy"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "restless"
+cn "restless"  "ui.label":"restless"
+cn "restless"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "hearts"
+cn "hearts"  "ui.label":"hearts"
+cn "hearts"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "that"
+cn "that"  "ui.label":"that"
+cn "that"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "never"
+cn "never"  "ui.label":"never"
+cn "never"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "menda"
+cn "menda"  "ui.label":"menda"
+cn "menda"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "oh"
+cn "oh"  "ui.label":"oh"
+cn "oh"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "wil"
+cn "wil"  "ui.label":"wil"
+cn "wil"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "she"
+cn "she"  "ui.label":"she"
+cn "she"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "stil"
+cn "stil"  "ui.label":"stil"
+cn "stil"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "love"
+cn "love"  "ui.label":"love"
+cn "love"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "when"
+cn "when"  "ui.label":"when"
+cn "when"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "not"
+cn "not"  "ui.label":"not"
+cn "not"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "arouno"
+cn "arouno"  "ui.label":"arouno"
+cn "arouno"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "many"
+cn "many"  "ui.label":"many"
+cn "many"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "things"
+cn "things"  "ui.label":"things"
+cn "things"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "should"
+cn "should"  "ui.label":"should"
+cn "should"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "have"
+cn "have"  "ui.label":"have"
+cn "have"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "told"
+cn "told"  "ui.label":"told"
+cn "told"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "night"
+cn "night"  "ui.label":"night"
+cn "night"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "willinga"
+cn "willinga"  "ui.label":"willinga"
+cn "willinga"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "hold"
+cn "hold"  "ui.label":"hold"
+cn "hold"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "just"
+cn "just"  "ui.label":"just"
+cn "just"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "tezeć"
+cn "tezeć"  "ui.label":"tezeć"
+cn "tezeć"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "shoulder"
+cn "shoulder"  "ui.label":"shoulder"
+cn "shoulder"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "thery"
+cn "thery"  "ui.label":"thery"
+cn "thery"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "remind"
+cn "remind"  "ui.label":"remind"
+cn "remind"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "doesn"
+cn "doesn"  "ui.label":"doesn"
+cn "doesn"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "really"
+cn "really"  "ui.label":"really"
+cn "really"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "matte"
+cn "matte"  "ui.label":"matte"
+cn "matte"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "whon"
+cn "whon"  "ui.label":"whon"
+cn "whon"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "side"
+cn "side"  "ui.label":"side"
+cn "side"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "walking"
+cn "walking"  "ui.label":"walking"
+cn "walking"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "awy"
+cn "awy"  "ui.label":"awy"
+cn "awy"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "and"
+cn "and"  "ui.label":"and"
+cn "and"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "theyry"
+cn "theyry"  "ui.label":"theyry"
+cn "theyry"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "talking"
+cn "talking"  "ui.label":"talking"
+cn "talking"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "behind"
+cn "behind"  "ui.label":"behind"
+cn "behind"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "forget"
+cn "forget"  "ui.label":"forget"
+cn "forget"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "til"
+cn "til"  "ui.label":"til"
+cn "til"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "someboda"
+cn "someboda"  "ui.label":"someboda"
+cn "someboda"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "comesa"
+cn "comesa"  "ui.label":"comesa"
+cn "comesa"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "along"
+cn "along"  "ui.label":"along"
+cn "along"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "whery"
+cn "whery"  "ui.label":"whery"
+cn "whery"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "been"
+cn "been"  "ui.label":"been"
+cn "been"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "a"
+cn "a"  "ui.label":"a"
+cn "a"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "him"
+cn "him"  "ui.label":"him"
+cn "him"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "h"
+cn "h"  "ui.label":"h"
+cn "h"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "hes"
+cn "hes"  "ui.label":"hes"
+cn "hes"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "holding"
+cn "holding"  "ui.label":"holding"
+cn "holding"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "my"
+cn "my"  "ui.label":"my"
+cn "my"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "another"
+cn "another"  "ui.label":"another"
+cn "another"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "ooh"
+cn "ooh"  "ui.label":"ooh"
+cn "ooh"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "hoo"
+cn "hoo"  "ui.label":"hoo"
+cn "hoo"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "bout"
+cn "bout"  "ui.label":"bout"
+cn "bout"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "wy"
+cn "wy"  "ui.label":"wy"
+cn "wy"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "heać"
+cn "heać"  "ui.label":"heać"
+cn "heać"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "started"
+cn "started"  "ui.label":"started"
+cn "started"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+an "m"
+cn "m"  "ui.label":"m"
+cn "m"  "ui.style":"fill-color:#ccc; size:5px; text-size:10px; text-offset: 5px;"
+ae "START -> theres" "START" > "theres"
+ce "START -> theres"  "ui.label":1
+ce "START -> theres"  "weight":1
+ae "theres -> talk" "theres" > "talk"
+ce "theres -> talk"  "ui.label":2
+ce "theres -> talk"  "weight":2
+ae "talk -> the" "talk" > "the"
+ce "talk -> the"  "ui.label":2
+ce "talk -> the"  "weight":2
+ae "the -> streeo" "the" > "streeo"
+ce "the -> streeo"  "ui.label":2
+ce "the -> streeo"  "weight":2
+ae "streeo -> it" "streeo" > "it"
+ce "streeo -> it"  "ui.label":1
+ce "streeo -> it"  "weight":1
+ae "it -> sounds" "it" > "sounds"
+ce "it -> sounds"  "ui.label":1
+ce "it -> sounds"  "weight":1
+ae "sounds -> so" "sounds" > "so"
+ce "sounds -> so"  "ui.label":1
+ce "sounds -> so"  "weight":1
+ae "so -> familia" "so" > "familia"
+ce "so -> familia"  "ui.label":1
+ce "so -> familia"  "weight":1
+ae "familia -> great" "familia" > "great"
+ce "familia -> great"  "ui.label":1
+ce "familia -> great"  "weight":1
+ae "great -> expectations" "great" > "expectations"
+ce "great -> expectations"  "ui.label":1
+ce "great -> expectations"  "weight":1
+ae "expectations -> everybodys" "expectations" > "everybodys"
+ce "expectations -> everybodys"  "ui.label":1
+ce "expectations -> everybodys"  "weight":1
+ae "everybodys -> watching" "everybodys" > "watching"
+ce "everybodys -> watching"  "ui.label":1
+ce "everybodys -> watching"  "weight":1
+ae "watching -> you" "watching" > "you"
+ce "watching -> you"  "ui.label":1
+ce "watching -> you"  "weight":1
+ae "you -> peopł" "you" > "peopł"
+ce "you -> peopł"  "ui.label":1
+ce "you -> peopł"  "weight":1
+ae "peopł -> you" "peopł" > "you"
+ce "peopł -> you"  "ui.label":1
+ce "peopł -> you"  "weight":1
+ae "you -> ać" "you" > "ać"
+ce "you -> ać"  "ui.label":1
+ce "you -> ać"  "weight":1
+ae "ać -> they" "ać" > "they"
+ce "ać -> they"  "ui.label":1
+ce "ać -> they"  "weight":1
+ae "they -> all" "they" > "all"
+ce "they -> all"  "ui.label":1
+ce "they -> all"  "weight":1
+ae "all -> seem" "all" > "seem"
+ce "all -> seem"  "ui.label":1
+ce "all -> seem"  "weight":1
+ae "seem -> knociw" "seem" > "knociw"
+ce "seem -> knociw"  "ui.label":1
+ce "seem -> knociw"  "weight":1
+ae "knociw -> you" "knociw" > "you"
+ce "knociw -> you"  "ui.label":1
+ce "knociw -> you"  "weight":1
+ae "you -> even" "you" > "even"
+ce "you -> even"  "ui.label":1
+ce "you -> even"  "weight":1
+ae "even -> yra" "even" > "yra"
+ce "even -> yra"  "ui.label":1
+ce "even -> yra"  "weight":1
+ae "yra -> old" "yra" > "old"
+ce "yra -> old"  "ui.label":1
+ce "yra -> old"  "weight":1
+ae "old -> friends" "old" > "friends"
+ce "old -> friends"  "ui.label":1
+ce "old -> friends"  "weight":1
+ae "friends -> treat" "friends" > "treat"
+ce "friends -> treat"  "ui.label":1
+ce "friends -> treat"  "weight":1
+ae "treat -> you" "treat" > "you"
+ce "treat -> you"  "ui.label":1
+ce "treat -> you"  "weight":1
+ae "you -> like" "you" > "like"
+ce "you -> like"  "ui.label":1
+ce "you -> like"  "weight":1
+ae "like -> youry" "like" > "youry"
+ce "like -> youry"  "ui.label":1
+ce "like -> youry"  "weight":1
+ae "youry -> something" "youry" > "something"
+ce "youry -> something"  "ui.label":1
+ce "youry -> something"  "weight":1
+ae "something -> new" "something" > "new"
+ce "something -> new"  "ui.label":1
+ce "something -> new"  "weight":1
+ae "new -> johnny" "new" > "johnny"
+ce "new -> johnny"  "ui.label":1
+ce "new -> johnny"  "weight":1
+ae "johnny -> comy" "johnny" > "comy"
+ce "johnny -> comy"  "ui.label":2
+ce "johnny -> comy"  "weight":2
+ae "comy -> lately" "comy" > "lately"
+ce "comy -> lately"  "ui.label":2
+ce "comy -> lately"  "weight":2
+ae "lately -> the" "lately" > "the"
+ce "lately -> the"  "ui.label":2
+ce "lately -> the"  "weight":2
+ae "the -> new" "the" > "new"
+ce "the -> new"  "ui.label":4
+ce "the -> new"  "weight":4
+ae "new -> kid" "new" > "kid"
+ce "new -> kid"  "ui.label":17
+ce "new -> kid"  "weight":17
+ae "kid -> in" "kid" > "in"
+ce "kid -> in"  "ui.label":16
+ce "kid -> in"  "weight":16
+ae "in -> town" "in" > "town"
+ce "in -> town"  "ui.label":16
+ce "in -> town"  "weight":16
+ae "town -> everyboda" "town" > "everyboda"
+ce "town -> everyboda"  "ui.label":2
+ce "town -> everyboda"  "weight":2
+ae "everyboda -> loves" "everyboda" > "loves"
+ce "everyboda -> loves"  "ui.label":2
+ce "everyboda -> loves"  "weight":2
+ae "loves -> you" "loves" > "you"
+ce "loves -> you"  "ui.label":1
+ce "loves -> you"  "weight":1
+ae "you -> so" "you" > "so"
+ce "you -> so"  "ui.label":1
+ce "you -> so"  "weight":1
+ae "so -> dont" "so" > "dont"
+ce "so -> dont"  "ui.label":1
+ce "so -> dont"  "weight":1
+ae "dont -> let" "dont" > "let"
+ce "dont -> let"  "ui.label":1
+ce "dont -> let"  "weight":1
+ae "let -> them" "let" > "them"
+ce "let -> them"  "ui.label":1
+ce "let -> them"  "weight":1
+ae "them -> down" "them" > "down"
+ce "them -> down"  "ui.label":1
+ce "them -> down"  "weight":1
+ae "down -> you" "down" > "you"
+ce "down -> you"  "ui.label":1
+ce "down -> you"  "weight":1
+ae "you -> look" "you" > "look"
+ce "you -> look"  "ui.label":1
+ce "you -> look"  "weight":1
+ae "look -> in" "look" > "in"
+ce "look -> in"  "ui.label":1
+ce "look -> in"  "weight":1
+ae "in -> her" "in" > "her"
+ce "in -> her"  "ui.label":1
+ce "in -> her"  "weight":1
+ae "her -> eyes" "her" > "eyes"
+ce "her -> eyes"  "ui.label":1
+ce "her -> eyes"  "weight":1
+ae "eyes -> the" "eyes" > "the"
+ce "eyes -> the"  "ui.label":1
+ce "eyes -> the"  "weight":1
+ae "the -> musica" "the" > "musica"
+ce "the -> musica"  "ui.label":1
+ce "the -> musica"  "weight":1
+ae "musica -> begno" "musica" > "begno"
+ce "musica -> begno"  "ui.label":1
+ce "musica -> begno"  "weight":1
+ae "begno -> play" "begno" > "play"
+ce "begno -> play"  "ui.label":1
+ce "begno -> play"  "weight":1
+ae "play -> hopeless" "play" > "hopeless"
+ce "play -> hopeless"  "ui.label":1
+ce "play -> hopeless"  "weight":1
+ae "hopeless -> romantics" "hopeless" > "romantics"
+ce "hopeless -> romantics"  "ui.label":1
+ce "hopeless -> romantics"  "weight":1
+ae "romantics -> hery" "romantics" > "hery"
+ce "romantics -> hery"  "ui.label":1
+ce "romantics -> hery"  "weight":1
+ae "hery -> aeć" "hery" > "aeć"
+ce "hery -> aeć"  "ui.label":1
+ce "hery -> aeć"  "weight":1
+ae "aeć -> but" "aeć" > "but"
+ce "aeć -> but"  "ui.label":1
+ce "aeć -> but"  "weight":1
+ae "but -> after" "but" > "after"
+ce "but -> after"  "ui.label":1
+ce "but -> after"  "weight":1
+ae "after -> awhile" "after" > "awhile"
+ce "after -> awhile"  "ui.label":1
+ce "after -> awhile"  "weight":1
+ae "awhile -> youry" "awhile" > "youry"
+ce "awhile -> youry"  "ui.label":1
+ce "awhile -> youry"  "weight":1
+ae "youry -> looknąć" "youry" > "looknąć"
+ce "youry -> looknąć"  "ui.label":1
+ce "youry -> looknąć"  "weight":1
+ae "looknąć -> the" "looknąć" > "the"
+ce "looknąć -> the"  "ui.label":1
+ce "looknąć -> the"  "weight":1
+ae "the -> other" "the" > "other"
+ce "the -> other"  "ui.label":1
+ce "the -> other"  "weight":1
+ae "other -> way" "other" > "way"
+ce "other -> way"  "ui.label":1
+ce "other -> way"  "weight":1
+ae "way -> its" "way" > "its"
+ce "way -> its"  "ui.label":1
+ce "way -> its"  "weight":1
+ae "its -> thosy" "its" > "thosy"
+ce "its -> thosy"  "ui.label":1
+ce "its -> thosy"  "weight":1
+ae "thosy -> restless" "thosy" > "restless"
+ce "thosy -> restless"  "ui.label":1
+ce "thosy -> restless"  "weight":1
+ae "restless -> hearts" "restless" > "hearts"
+ce "restless -> hearts"  "ui.label":1
+ce "restless -> hearts"  "weight":1
+ae "hearts -> that" "hearts" > "that"
+ce "hearts -> that"  "ui.label":1
+ce "hearts -> that"  "weight":1
+ae "that -> never" "that" > "never"
+ce "that -> never"  "ui.label":1
+ce "that -> never"  "weight":1
+ae "never -> menda" "never" > "menda"
+ce "never -> menda"  "ui.label":1
+ce "never -> menda"  "weight":1
+ae "menda -> oh" "menda" > "oh"
+ce "menda -> oh"  "ui.label":1
+ce "menda -> oh"  "weight":1
+ae "oh -> johnny" "oh" > "johnny"
+ce "oh -> johnny"  "ui.label":1
+ce "oh -> johnny"  "weight":1
+ae "town -> wil" "town" > "wil"
+ce "town -> wil"  "ui.label":1
+ce "town -> wil"  "weight":1
+ae "wil -> she" "wil" > "she"
+ce "wil -> she"  "ui.label":1
+ce "wil -> she"  "weight":1
+ae "she -> stil" "she" > "stil"
+ce "she -> stil"  "ui.label":1
+ce "she -> stil"  "weight":1
+ae "stil -> love" "stil" > "love"
+ce "stil -> love"  "ui.label":1
+ce "stil -> love"  "weight":1
+ae "love -> you" "love" > "you"
+ce "love -> you"  "ui.label":1
+ce "love -> you"  "weight":1
+ae "you -> when" "you" > "when"
+ce "you -> when"  "ui.label":1
+ce "you -> when"  "weight":1
+ae "when -> youry" "when" > "youry"
+ce "when -> youry"  "ui.label":1
+ce "when -> youry"  "weight":1
+ae "youry -> not" "youry" > "not"
+ce "youry -> not"  "ui.label":1
+ce "youry -> not"  "weight":1
+ae "not -> arouno" "not" > "arouno"
+ce "not -> arouno"  "ui.label":1
+ce "not -> arouno"  "weight":1
+ae "arouno -> theres" "arouno" > "theres"
+ce "arouno -> theres"  "ui.label":1
+ce "arouno -> theres"  "weight":1
+ae "theres -> so" "theres" > "so"
+ce "theres -> so"  "ui.label":1
+ce "theres -> so"  "weight":1
+ae "so -> many" "so" > "many"
+ce "so -> many"  "ui.label":1
+ce "so -> many"  "weight":1
+ae "many -> things" "many" > "things"
+ce "many -> things"  "ui.label":1
+ce "many -> things"  "weight":1
+ae "things -> you" "things" > "you"
+ce "things -> you"  "ui.label":1
+ce "things -> you"  "weight":1
+ae "you -> should" "you" > "should"
+ce "you -> should"  "ui.label":1
+ce "you -> should"  "weight":1
+ae "should -> have" "should" > "have"
+ce "should -> have"  "ui.label":1
+ce "should -> have"  "weight":1
+ae "have -> told" "have" > "told"
+ce "have -> told"  "ui.label":1
+ce "have -> told"  "weight":1
+ae "told -> her" "told" > "her"
+ce "told -> her"  "ui.label":1
+ce "told -> her"  "weight":1
+ae "her -> but" "her" > "but"
+ce "her -> but"  "ui.label":1
+ce "her -> but"  "weight":1
+ae "but -> night" "but" > "night"
+ce "but -> night"  "ui.label":1
+ce "but -> night"  "weight":1
+ae "night -> after" "night" > "after"
+ce "night -> after"  "ui.label":1
+ce "night -> after"  "weight":1
+ae "after -> night" "after" > "night"
+ce "after -> night"  "ui.label":1
+ce "after -> night"  "weight":1
+ae "night -> youry" "night" > "youry"
+ce "night -> youry"  "ui.label":1
+ce "night -> youry"  "weight":1
+ae "youry -> willinga" "youry" > "willinga"
+ce "youry -> willinga"  "ui.label":1
+ce "youry -> willinga"  "weight":1
+ae "willinga -> hold" "willinga" > "hold"
+ce "willinga -> hold"  "ui.label":1
+ce "willinga -> hold"  "weight":1
+ae "hold -> her" "hold" > "her"
+ce "hold -> her"  "ui.label":2
+ce "hold -> her"  "weight":2
+ae "her -> just" "her" > "just"
+ce "her -> just"  "ui.label":1
+ce "her -> just"  "weight":1
+ae "just -> hold" "just" > "hold"
+ce "just -> hold"  "ui.label":1
+ce "just -> hold"  "weight":1
+ae "her -> tezeć" "her" > "tezeć"
+ce "her -> tezeć"  "ui.label":1
+ce "her -> tezeć"  "weight":1
+ae "tezeć -> yra" "tezeć" > "yra"
+ce "tezeć -> yra"  "ui.label":1
+ce "tezeć -> yra"  "weight":1
+ae "yra -> shoulder" "yra" > "shoulder"
+ce "yra -> shoulder"  "ui.label":1
+ce "yra -> shoulder"  "weight":1
+ae "shoulder -> theres" "shoulder" > "theres"
+ce "shoulder -> theres"  "ui.label":1
+ce "shoulder -> theres"  "weight":1
+ae "streeo -> its" "streeo" > "its"
+ce "streeo -> its"  "ui.label":1
+ce "streeo -> its"  "weight":1
+ae "its -> thery" "its" > "thery"
+ce "its -> thery"  "ui.label":1
+ce "its -> thery"  "weight":1
+ae "thery -> remind" "thery" > "remind"
+ce "thery -> remind"  "ui.label":1
+ce "thery -> remind"  "weight":1
+ae "remind -> you" "remind" > "you"
+ce "remind -> you"  "ui.label":1
+ce "remind -> you"  "weight":1
+ae "you -> doesn" "you" > "doesn"
+ce "you -> doesn"  "ui.label":1
+ce "you -> doesn"  "weight":1
+ae "doesn -> really" "doesn" > "really"
+ce "doesn -> really"  "ui.label":1
+ce "doesn -> really"  "weight":1
+ae "really -> matte" "really" > "matte"
+ce "really -> matte"  "ui.label":1
+ce "really -> matte"  "weight":1
+ae "matte -> whon" "matte" > "whon"
+ce "matte -> whon"  "ui.label":1
+ce "matte -> whon"  "weight":1
+ae "whon -> side" "whon" > "side"
+ce "whon -> side"  "ui.label":1
+ce "whon -> side"  "weight":1
+ae "side -> youry" "side" > "youry"
+ce "side -> youry"  "ui.label":1
+ce "side -> youry"  "weight":1
+ae "youry -> youry" "youry" > "youry"
+ce "youry -> youry"  "ui.label":1
+ce "youry -> youry"  "weight":1
+ae "youry -> walking" "youry" > "walking"
+ce "youry -> walking"  "ui.label":1
+ce "youry -> walking"  "weight":1
+ae "walking -> awy" "walking" > "awy"
+ce "walking -> awy"  "ui.label":1
+ce "walking -> awy"  "weight":1
+ae "awy -> and" "awy" > "and"
+ce "awy -> and"  "ui.label":1
+ce "awy -> and"  "weight":1
+ae "and -> theyry" "and" > "theyry"
+ce "and -> theyry"  "ui.label":1
+ce "and -> theyry"  "weight":1
+ae "theyry -> talking" "theyry" > "talking"
+ce "theyry -> talking"  "ui.label":1
+ce "theyry -> talking"  "weight":1
+ae "talking -> behind" "talking" > "behind"
+ce "talking -> behind"  "ui.label":1
+ce "talking -> behind"  "weight":1
+ae "behind -> you" "behind" > "you"
+ce "behind -> you"  "ui.label":1
+ce "behind -> you"  "weight":1
+ae "you -> they" "you" > "they"
+ce "you -> they"  "ui.label":1
+ce "you -> they"  "weight":1
+ae "they -> wil" "they" > "wil"
+ce "they -> wil"  "ui.label":1
+ce "they -> wil"  "weight":1
+ae "wil -> never" "wil" > "never"
+ce "wil -> never"  "ui.label":1
+ce "wil -> never"  "weight":1
+ae "never -> forget" "never" > "forget"
+ce "never -> forget"  "ui.label":1
+ce "never -> forget"  "weight":1
+ae "forget -> you" "forget" > "you"
+ce "forget -> you"  "ui.label":1
+ce "forget -> you"  "weight":1
+ae "you -> til" "you" > "til"
+ce "you -> til"  "ui.label":1
+ce "you -> til"  "weight":1
+ae "til -> someboda" "til" > "someboda"
+ce "til -> someboda"  "ui.label":1
+ce "til -> someboda"  "weight":1
+ae "someboda -> new" "someboda" > "new"
+ce "someboda -> new"  "ui.label":1
+ce "someboda -> new"  "weight":1
+ae "new -> comesa" "new" > "comesa"
+ce "new -> comesa"  "ui.label":1
+ce "new -> comesa"  "weight":1
+ae "comesa -> along" "comesa" > "along"
+ce "comesa -> along"  "ui.label":1
+ce "comesa -> along"  "weight":1
+ae "along -> whery" "along" > "whery"
+ce "along -> whery"  "ui.label":1
+ce "along -> whery"  "weight":1
+ae "whery -> you" "whery" > "you"
+ce "whery -> you"  "ui.label":1
+ce "whery -> you"  "weight":1
+ae "you -> been" "you" > "been"
+ce "you -> been"  "ui.label":1
+ce "you -> been"  "weight":1
+ae "been -> lately" "been" > "lately"
+ce "been -> lately"  "ui.label":1
+ce "been -> lately"  "weight":1
+ae "lately -> theres" "lately" > "theres"
+ce "lately -> theres"  "ui.label":1
+ce "lately -> theres"  "weight":1
+ae "theres -> a" "theres" > "a"
+ce "theres -> a"  "ui.label":12
+ce "theres -> a"  "weight":12
+ae "a -> new" "a" > "new"
+ce "a -> new"  "ui.label":12
+ce "a -> new"  "weight":12
+ae "loves -> him" "loves" > "him"
+ce "loves -> him"  "ui.label":1
+ce "loves -> him"  "weight":1
+ae "him -> dont" "him" > "dont"
+ce "him -> dont"  "ui.label":1
+ce "him -> dont"  "weight":1
+ae "dont -> they" "dont" > "they"
+ce "dont -> they"  "ui.label":1
+ce "dont -> they"  "weight":1
+ae "they -> a" "they" > "a"
+ce "they -> a"  "ui.label":1
+ce "they -> a"  "weight":1
+ae "a -> a" "a" > "a"
+ce "a -> a"  "ui.label":1
+ce "a -> a"  "weight":1
+ae "a -> h" "a" > "h"
+ce "a -> h"  "ui.label":1
+ce "a -> h"  "weight":1
+ae "h -> and" "h" > "and"
+ce "h -> and"  "ui.label":1
+ce "h -> and"  "weight":1
+ae "and -> hes" "and" > "hes"
+ce "and -> hes"  "ui.label":1
+ce "and -> hes"  "weight":1
+ae "hes -> holding" "hes" > "holding"
+ce "hes -> holding"  "ui.label":1
+ce "hes -> holding"  "weight":1
+ae "holding -> her" "holding" > "her"
+ce "holding -> her"  "ui.label":1
+ce "holding -> her"  "weight":1
+ae "her -> and" "her" > "and"
+ce "her -> and"  "ui.label":1
+ce "her -> and"  "weight":1
+ae "and -> youry" "and" > "youry"
+ce "and -> youry"  "ui.label":1
+ce "and -> youry"  "weight":1
+ae "youry -> stil" "youry" > "stil"
+ce "youry -> stil"  "ui.label":1
+ce "youry -> stil"  "weight":1
+ae "stil -> arouno" "stil" > "arouno"
+ce "stil -> arouno"  "ui.label":1
+ce "stil -> arouno"  "weight":1
+ae "arouno -> oh" "arouno" > "oh"
+ce "arouno -> oh"  "ui.label":1
+ce "arouno -> oh"  "weight":1
+ae "oh -> my" "oh" > "my"
+ce "oh -> my"  "ui.label":1
+ce "oh -> my"  "weight":1
+ae "my -> my" "my" > "my"
+ce "my -> my"  "ui.label":1
+ce "my -> my"  "weight":1
+ae "my -> theres" "my" > "theres"
+ce "my -> theres"  "ui.label":1
+ce "my -> theres"  "weight":1
+ae "town -> just" "town" > "just"
+ce "town -> just"  "ui.label":1
+ce "town -> just"  "weight":1
+ae "just -> another" "just" > "another"
+ce "just -> another"  "ui.label":1
+ce "just -> another"  "weight":1
+ae "another -> new" "another" > "new"
+ce "another -> new"  "ui.label":1
+ce "another -> new"  "weight":1
+ae "town -> ooh" "town" > "ooh"
+ce "town -> ooh"  "ui.label":3
+ce "town -> ooh"  "weight":3
+ae "ooh -> hoo" "ooh" > "hoo"
+ce "ooh -> hoo"  "ui.label":4
+ce "ooh -> hoo"  "weight":4
+ae "hoo -> everybodys" "hoo" > "everybodys"
+ce "hoo -> everybodys"  "ui.label":2
+ce "hoo -> everybodys"  "weight":2
+ae "everybodys -> talking" "everybodys" > "talking"
+ce "everybodys -> talking"  "ui.label":2
+ce "everybodys -> talking"  "weight":2
+ae "talking -> bout" "talking" > "bout"
+ce "talking -> bout"  "ui.label":1
+ce "talking -> bout"  "weight":1
+ae "bout -> the" "bout" > "the"
+ce "bout -> the"  "ui.label":1
+ce "bout -> the"  "weight":1
+ae "hoo -> ooh" "hoo" > "ooh"
+ce "hoo -> ooh"  "ui.label":1
+ce "hoo -> ooh"  "weight":1
+ae "everybodys -> walking" "everybodys" > "walking"
+ce "everybodys -> walking"  "ui.label":1
+ce "everybodys -> walking"  "weight":1
+ae "walking -> like" "walking" > "like"
+ce "walking -> like"  "ui.label":1
+ce "walking -> like"  "weight":1
+ae "like -> the" "like" > "the"
+ce "like -> the"  "ui.label":1
+ce "like -> the"  "weight":1
+ae "hoo -> theres" "hoo" > "theres"
+ce "hoo -> theres"  "ui.label":1
+ce "hoo -> theres"  "weight":1
+ae "town -> dont" "town" > "dont"
+ce "town -> dont"  "ui.label":2
+ce "town -> dont"  "weight":2
+ae "dont -> wy" "dont" > "wy"
+ce "dont -> wy"  "ui.label":2
+ce "dont -> wy"  "weight":2
+ae "wy -> heać" "wy" > "heać"
+ce "wy -> heać"  "ui.label":2
+ce "wy -> heać"  "weight":2
+ae "heać -> it" "heać" > "it"
+ce "heać -> it"  "ui.label":2
+ce "heać -> it"  "weight":2
+ae "it -> theres" "it" > "theres"
+ce "it -> theres"  "ui.label":2
+ce "it -> theres"  "weight":2
+ae "town -> theres" "town" > "theres"
+ce "town -> theres"  "ui.label":3
+ce "town -> theres"  "weight":3
+ae "town -> everybodys" "town" > "everybodys"
+ce "town -> everybodys"  "ui.label":1
+ce "town -> everybodys"  "weight":1
+ae "talking -> theres" "talking" > "theres"
+ce "talking -> theres"  "ui.label":1
+ce "talking -> theres"  "weight":1
+ae "town -> peopł" "town" > "peopł"
+ce "town -> peopł"  "ui.label":1
+ce "town -> peopł"  "weight":1
+ae "peopł -> started" "peopł" > "started"
+ce "peopł -> started"  "ui.label":1
+ce "peopł -> started"  "weight":1
+ae "started -> walking" "started" > "walking"
+ce "started -> walking"  "ui.label":1
+ce "started -> walking"  "weight":1
+ae "walking -> theres" "walking" > "theres"
+ce "walking -> theres"  "ui.label":1
+ce "walking -> theres"  "weight":1
+ae "town -> h" "town" > "h"
+ce "town -> h"  "ui.label":2
+ce "town -> h"  "weight":2
+ae "h -> m" "h" > "m"
+ce "h -> m"  "ui.label":4
+ce "h -> m"  "weight":4
+ae "m -> m" "m" > "m"
+ce "m -> m"  "ui.label":6
+ce "m -> m"  "weight":6
+ae "m -> h" "m" > "h"
+ce "m -> h"  "ui.label":2
+ce "m -> h"  "weight":2
+ae "m -> theres" "m" > "theres"
+ce "m -> theres"  "ui.label":2
+ce "m -> theres"  "weight":2

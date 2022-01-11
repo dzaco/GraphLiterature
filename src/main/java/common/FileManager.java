@@ -104,7 +104,7 @@ public class FileManager {
         JFileChooser chooser = new JFileChooser();
         chooser.setCurrentDirectory(new java.io.File(""));
         chooser.setDialogTitle("Select a PDF file");
-        chooser.setFileFilter(new FileNameExtensionFilter("PDF File", "PDF","PDF"));
+        chooser.setFileFilter(new FileNameExtensionFilter("PDF File", "PDF","PDF","TXT"));
         if(chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION)
             path = chooser.getSelectedFile().getPath().replace("\\","\\\\");
         else

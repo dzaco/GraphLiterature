@@ -26,12 +26,27 @@ public class AnalyzerController {
             analyzedWords.forEach(System.out::println);
 
             var graph = new Graph().build(analyzedWords);
+            FileManager.save(graph,"Analyzed_graph");
             graph.display();
 
-            var textStat = new TextStatistic(text);
-            var wordStat = new WordsStatistic(analyzedWords);
+            Globals.textStat = new TextStatistic(text);
+            Globals.wordStat = new WordsStatistic(analyzedWords);
 
-            //System.in.read();
+
+            /*
+            public List<String> getWords() {
+        return words;
+    }
+    public int getNumberOfWords() {
+        return numberOfWords;
+    }
+    public int getNumberOfUniqueWords() {
+        return numberOfUniqueWords;
+    }
+    public Map<String, Integer> getWordsOccurrence() {
+        return wordsOccurrence;
+    }
+             */
         }
     }
 }
