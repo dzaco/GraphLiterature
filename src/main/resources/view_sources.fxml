@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="javaFX.ViewSourcesController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane fx:id="stageWindow" prefHeight="562" prefWidth="845.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaFX.ViewSourcesController">
+   <children>
+      <Button mnemonicParsing="false" onAction="#readFile" prefHeight="53.0" prefWidth="160.0" text="Read TXT" />
+      <Button fx:id="btnViewGraph" layoutY="53.0" mnemonicParsing="false" onAction="#handleBtnGraphView" prefHeight="53.0" prefWidth="160.0" text="READ PNG" />
+      <TextArea fx:id="txtArea" layoutX="160.0" layoutY="-6.0" prefHeight="568.0" prefWidth="686.0" />
+      <Separator layoutY="49.0" prefHeight="4.0" prefWidth="160.0" />
+   </children>
 </AnchorPane>
